@@ -11,8 +11,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <Image src="/Marketpilot Logo.png" alt="MarketPilot" width={140} height={40} className="h-9 w-auto" />
+          <div className="flex items-center gap-3">
+            <Image src="/Icon Logo Marketpilot.png" alt="MarketPilot Icon" width={44} height={44} className="w-11 h-11 rounded-full object-cover ring-2 ring-[#4F46E5]/50" />
+            <Image src="/Marketpilot Logo.png" alt="MarketPilot" width={180} height={50} className="h-11 w-auto" />
           </div>
 
           {/* Desktop nav */}

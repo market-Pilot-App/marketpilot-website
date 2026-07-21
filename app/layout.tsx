@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     images: ["/logo.png"],
   },
   icons: {
-    icon: "/Marketpilot Logo BG R.png",
-    apple: "/Marketpilot Logo BG R.png",
+    icon: "/Icon Logo Marketpilot.png",
+    apple: "/Icon Logo Marketpilot.png",
   },
 };
 

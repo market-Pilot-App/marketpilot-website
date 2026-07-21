@@ -1,6 +1,38 @@
-import Image from "next/image";
+"use client";
+import { useEffect, useState } from "react";
+
+const headlines = [
+  {
+    line1: "Automate Your",
+    highlight1: "Social Media.",
+    line2: "Guarantee Your",
+    highlight2: "Growth.",
+  },
+  {
+    line1: "Market your brand or products",
+    highlight1: "while you sleep.",
+    line2: "Boost Engagement",
+    highlight2: "without lifting a finger.",
+  },
+];
 
 export default function Hero() {
+  const [index, setIndex] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIndex((i) => (i + 1) % headlines.length);
+        setVisible(true);
+      }, 500);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const h = headlines[index];
+
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 pt-16 overflow-hidden">
       {/* Background glow */}
@@ -16,16 +48,19 @@ export default function Hero() {
           Africa's First Autonomous Marketing Engine
         </div>
 
-        {/* Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          Automate Your{" "}
+        {/* Animated Headline */}
+        <h1
+          className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 transition-opacity duration-500"
+          style={{ opacity: visible ? 1 : 0 }}
+        >
+          {h.line1}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#10B981]">
-            Social Media.
+            {h.highlight1}
           </span>
           <br />
-          Guarantee Your{" "}
+          {h.line2}{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#4F46E5]">
-            Growth.
+            {h.highlight2}
           </span>
         </h1>
 
