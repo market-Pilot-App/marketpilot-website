@@ -11,8 +11,8 @@ const headlines = [
   {
     line1: "Market your brand or products",
     highlight1: "while you sleep.",
-    line2: "Boost Engagement",
-    highlight2: "without lifting a finger.",
+    line2: "",
+    highlight2: "",
   },
 ];
 
@@ -57,18 +57,22 @@ export default function Hero() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#10B981]">
             {h.highlight1}
           </span>
-          <br />
-          {h.line2}{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#4F46E5]">
-            {h.highlight2}
-          </span>
+          {h.line2 && (
+            <>
+              <br />
+              {h.line2}{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#10B981] to-[#4F46E5]">
+                {h.highlight2}
+              </span>
+            </>
+          )}
         </h1>
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
           MarketPilot posts daily to Facebook, Instagram, LinkedIn, Telegram & more —
           generates AI content, boosts your audience, and sends you weekly reports.
-          <span className="text-white font-medium"> You focus on your business. We handle your growth.</span>
+          <span className="text-white font-medium"> Boost engagement without lifting a finger. You focus on your business. We handle your growth.</span>
         </p>
 
         {/* CTAs */}

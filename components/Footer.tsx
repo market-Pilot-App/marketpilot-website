@@ -31,6 +31,7 @@ export default function Footer() {
               {[
                 { label: "Features", href: "#features" },
                 { label: "Pricing", href: "#pricing" },
+                { label: "Blog", href: "/blog" },
                 { label: "FAQ", href: "#faq" },
                 { label: "Book a Demo", href: "https://calendly.com/marketpilot2026/30min" },
               ].map((l) => (

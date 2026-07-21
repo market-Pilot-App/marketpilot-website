@@ -11,15 +11,14 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center gap-3">
-            <Image src="/Icon Logo Marketpilot.png" alt="MarketPilot Icon" width={44} height={44} className="w-11 h-11 rounded-full object-cover ring-2 ring-[#4F46E5]/50" />
-            <Image src="/Marketpilot Logo.png" alt="MarketPilot" width={180} height={50} className="h-11 w-auto" />
+          <div className="flex items-center">
+            <Image src="/Marketpilot Logo.png" alt="MarketPilot" width={200} height={56} className="h-12 w-auto rounded-full" />
           </div>
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            {["Features", "Pricing", "FAQ"].map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`}
+            {["Features", "Pricing", "Blog", "FAQ"].map((item) => (
+              <a key={item} href={item === "Blog" ? "/blog" : `#${item.toLowerCase()}`}
                 className="text-sm text-gray-400 hover:text-white transition-colors">
                 {item}
               </a>
@@ -48,8 +47,8 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-[#0F172A] border-t border-white/10 px-4 py-4 space-y-3">
-          {["Features", "Pricing", "FAQ"].map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setOpen(false)}
+          {["Features", "Pricing", "Blog", "FAQ"].map((item) => (
+            <a key={item} href={item === "Blog" ? "/blog" : `#${item.toLowerCase()}`} onClick={() => setOpen(false)}
               className="block text-sm text-gray-400 hover:text-white py-2">
               {item}
             </a>
