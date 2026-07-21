@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -25,6 +26,7 @@ export const posts = [
     category: "Strategy",
     date: "January 15, 2025",
     readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
   },
   {
     slug: "how-to-grow-your-facebook-page-in-nigeria",
@@ -33,6 +35,7 @@ export const posts = [
     category: "Facebook",
     date: "January 22, 2025",
     readTime: "7 min read",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80",
   },
   {
     slug: "ai-content-generation-for-small-businesses",
@@ -41,6 +44,7 @@ export const posts = [
     category: "AI & Content",
     date: "February 3, 2025",
     readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=800&q=80",
   },
   {
     slug: "tiktok-marketing-for-nigerian-brands",
@@ -49,6 +53,7 @@ export const posts = [
     category: "TikTok",
     date: "February 10, 2025",
     readTime: "5 min read",
+    image: "https://images.unsplash.com/photo-1611605698335-8441fbfd049b?w=800&q=80",
   },
   {
     slug: "whatsapp-marketing-strategy-nigeria",
@@ -57,6 +62,7 @@ export const posts = [
     category: "WhatsApp",
     date: "February 18, 2025",
     readTime: "6 min read",
+    image: "https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=800&q=80",
   },
   {
     slug: "social-media-posting-schedule-that-works",
@@ -65,6 +71,7 @@ export const posts = [
     category: "Strategy",
     date: "March 1, 2025",
     readTime: "4 min read",
+    image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80",
   },
 ];
 
@@ -87,9 +94,7 @@ export default function BlogPage() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#4F46E5]/20 border border-[#4F46E5]/40 rounded-full text-sm text-[#818CF8] mb-6">
               📝 Insights & Strategies
             </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">
-              Blog & Insights
-            </h1>
+            <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4">Blog & Insights</h1>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Practical marketing strategies for African businesses — from social media automation to audience growth.
             </p>
@@ -99,17 +104,30 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => (
               <Link key={post.slug} href={`/blog/${post.slug}`}
-                className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-[#4F46E5]/50 hover:bg-white/8 transition-all">
-                <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium mb-4 ${categoryColors[post.category] ?? "bg-white/10 text-gray-400"}`}>
-                  {post.category}
-                </span>
-                <h2 className="text-white font-bold text-lg leading-snug mb-3 group-hover:text-[#818CF8] transition-colors">
-                  {post.title}
-                </h2>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">{post.excerpt}</p>
-                <div className="flex items-center justify-between text-xs text-gray-500">
-                  <span>{post.date}</span>
-                  <span>{post.readTime}</span>
+                className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-[#4F46E5]/50 transition-all">
+                {/* Cover image */}
+                <div className="relative h-48 w-full overflow-hidden">
+                  <Image
+                    src={post.image}
+                    alt={post.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/60 to-transparent" />
+                  <span className={`absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium ${categoryColors[post.category] ?? "bg-white/10 text-gray-400"}`}>
+                    {post.category}
+                  </span>
+                </div>
+                {/* Content */}
+                <div className="p-6">
+                  <h2 className="text-white font-bold text-lg leading-snug mb-3 group-hover:text-[#818CF8] transition-colors">
+                    {post.title}
+                  </h2>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-4">{post.excerpt}</p>
+                  <div className="flex items-center justify-between text-xs text-gray-500">
+                    <span>{post.date}</span>
+                    <span>{post.readTime}</span>
+                  </div>
                 </div>
               </Link>
             ))}

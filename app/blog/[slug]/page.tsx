@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { posts } from "../page";
@@ -133,6 +134,12 @@ export default function BlogPost({ params }: Props) {
             </div>
           </div>
 
+          {/* Cover image */}
+          <div className="relative h-64 sm:h-80 w-full rounded-2xl overflow-hidden mb-10">
+            <Image src={post.image} alt={post.title} fill className="object-cover" priority />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/70 to-transparent" />
+          </div>
+
           {/* Content */}
           <article className="prose prose-invert prose-lg max-w-none">
             <p className="text-gray-300 text-lg leading-relaxed mb-8">{content.intro}</p>
@@ -160,9 +167,14 @@ export default function BlogPost({ params }: Props) {
             <div className="grid sm:grid-cols-3 gap-4">
               {related.map((p) => (
                 <Link key={p.slug} href={`/blog/${p.slug}`}
-                  className="bg-white/5 border border-white/10 rounded-xl p-4 hover:border-[#4F46E5]/50 transition-all">
-                  <p className="text-white text-sm font-semibold leading-snug mb-2">{p.title}</p>
-                  <p className="text-gray-500 text-xs">{p.readTime}</p>
+                  className="bg-white/5 border border-white/10 rounded-xl overflow-hidden hover:border-[#4F46E5]/50 transition-all">
+                  <div className="relative h-24 w-full">
+                    <Image src={p.image} alt={p.title} fill className="object-cover" />
+                  </div>
+                  <div className="p-3">
+                    <p className="text-white text-sm font-semibold leading-snug mb-1">{p.title}</p>
+                    <p className="text-gray-500 text-xs">{p.readTime}</p>
+                  </div>
                 </Link>
               ))}
             </div>

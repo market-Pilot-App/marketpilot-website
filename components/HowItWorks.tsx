@@ -24,9 +24,9 @@ export default function HowItWorks() {
     <section className="py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#10B981] text-sm font-semibold uppercase tracking-widest">Simple Process</span>
+          <span className="text-[#10B981] text-sm font-semibold uppercase tracking-widest">We Simplify the Process</span>
           <h2 className="text-3xl sm:text-5xl font-bold text-white mt-3 mb-4">
-            Up and running in <span className="text-[#4F46E5]">24 hours</span>
+            Up and running within <span className="text-[#4F46E5]">24–72 hours</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">No technical skills required. We handle everything from setup to daily operation.</p>
         </div>
