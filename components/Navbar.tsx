@@ -17,8 +17,8 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <div className="hidden md:flex items-center gap-8">
-            {["Features", "Pricing", "Blog", "FAQ"].map((item) => (
-              <a key={item} href={item === "Blog" ? "/blog" : `#${item.toLowerCase()}`}
+            {["Home", "Features", "Pricing", "Blog", "FAQ"].map((item) => (
+              <a key={item} href={item === "Home" ? "/" : item === "Blog" ? "/blog" : `#${item.toLowerCase()}`}
                 className="text-sm text-gray-400 hover:text-white transition-colors">
                 {item}
               </a>
@@ -27,7 +27,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://wa.me/2348060658537" target="_blank"
+            <a href="https://wa.me/2348023131379" target="_blank"
               className="text-sm text-gray-400 hover:text-white transition-colors">
               💬 WhatsApp
             </a>
@@ -47,8 +47,8 @@ export default function Navbar() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden bg-[#0F172A] border-t border-white/10 px-4 py-4 space-y-3">
-          {["Features", "Pricing", "Blog", "FAQ"].map((item) => (
-            <a key={item} href={item === "Blog" ? "/blog" : `#${item.toLowerCase()}`} onClick={() => setOpen(false)}
+          {["Home", "Features", "Pricing", "Blog", "FAQ"].map((item) => (
+            <a key={item} href={item === "Home" ? "/" : item === "Blog" ? "/blog" : `#${item.toLowerCase()}`} onClick={() => setOpen(false)}
               className="block text-sm text-gray-400 hover:text-white py-2">
               {item}
             </a>

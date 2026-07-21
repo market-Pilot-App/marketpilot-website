@@ -72,7 +72,7 @@ function CustomBudgetCard() {
     const msg = encodeURIComponent(
       `Hi MarketPilot! My name is ${name || "there"} and my monthly marketing budget is ${budget}. I'd like to discuss what you can do for me.`
     );
-    window.open(`https://wa.me/2348060658537?text=${msg}`, "_blank");
+    window.open(`https://wa.me/2348023131379?text=${msg}`, "_blank");
   };
 
   return (
@@ -182,7 +182,7 @@ export default function Pricing() {
         </div>
 
         <p className="text-center text-gray-500 text-sm mt-8">
-          Not sure which plan? <a href="https://wa.me/2348060658537" target="_blank" className="text-[#10B981] hover:underline">Chat with us on WhatsApp</a> and we'll recommend the best fit.
+          Not sure which plan? <a href="https://wa.me/2348023131379" target="_blank" className="text-[#10B981] hover:underline">Chat with us on WhatsApp</a> and we'll recommend the best fit.
         </p>
       </div>
     </section>

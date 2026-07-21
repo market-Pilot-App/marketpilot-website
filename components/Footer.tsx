@@ -13,7 +13,7 @@ export default function Footer() {
               Africa's first autonomous marketing engine. Powering brand growth across Nigeria and the continent.
             </p>
             <div className="flex gap-3 mt-4">
-              <a href="https://wa.me/2348060658537" target="_blank"
+              <a href="https://wa.me/2348023131379" target="_blank"
                 className="px-3 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs text-gray-400 hover:text-white transition-colors">
                 💬 WhatsApp
               </a>

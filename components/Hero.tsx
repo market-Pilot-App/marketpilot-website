@@ -81,7 +81,7 @@ export default function Hero() {
             className="w-full sm:w-auto px-8 py-4 bg-[#10B981] hover:bg-[#059669] text-white font-bold text-lg rounded-xl transition-all shadow-lg shadow-[#10B981]/25 hover:shadow-[#10B981]/40 hover:scale-105">
             📅 Book a Free Demo
           </a>
-          <a href="https://wa.me/2348060658537" target="_blank"
+          <a href="https://wa.me/2348023131379" target="_blank"
             className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-lg rounded-xl transition-all">
             💬 Chat on WhatsApp
           </a>

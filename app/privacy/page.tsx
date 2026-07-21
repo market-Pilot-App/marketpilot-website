@@ -61,7 +61,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">8. Contact Us</h2>
-            <p>Tradilink Africa Solution Limited<br />RC: 8949081<br />WhatsApp: +2348060658537<br />Email: marketpilot2026@gmail.com</p>
+            <p>Tradilink Africa Solution Limited<br />RC: 8949081<br />WhatsApp: +2348023131379<br />Email: marketpilot2026@gmail.com</p>
           </section>
         </div>
 
