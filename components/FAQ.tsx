@@ -20,11 +20,11 @@ const faqs = [
   },
   {
     q: "What platforms do you support?",
-    a: "We currently support Facebook, Instagram, LinkedIn, Telegram, X/Twitter and TikTok. Blog auto-publishing is also included on Growth and Agency plans.",
+    a: "We post organically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter. TikTok is supported for audience boosting (likes, views, followers) via our SMM system. Blog auto-publishing is also included on Growth and Agency plans.",
   },
   {
     q: "Will the content sound like my brand?",
-    a: "Yes. During setup we configure your brand voice, target audience and content angles. The AI generates content specifically tailored to your brand and Nigerian/African audience.",
+    a: "Yes. During setup our Brand DNA Engine analyses your business and extracts your tone of voice, target audience, key messages and words to always use or avoid. Every post, blog and email is then generated through this Brand DNA layer — so the content sounds like you, not a generic AI.",
   },
 ];
 

@@ -1,5 +1,12 @@
 const features = [
   {
+    icon: "🧬",
+    title: "Brand DNA Engine",
+    description: "AI learns your brand's tone, keywords, and audience during setup. Every post, blog, and email sounds like YOU — not a generic robot.",
+    color: "from-[#7C3AED] to-[#4F46E5]",
+    badge: "✨ New",
+  },
+  {
     icon: "🤖",
     title: "AI Content Generation",
     description: "Groq-powered AI generates fresh, engaging content daily tailored to your brand voice and target audience.",
@@ -8,20 +15,26 @@ const features = [
   {
     icon: "📅",
     title: "Multi-Platform Auto-Posting",
-    description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram, X/Twitter and TikTok on a smart schedule.",
+    description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter on a smart schedule. TikTok audience boosting included.",
     color: "from-[#10B981] to-[#059669]",
   },
   {
     icon: "🚀",
     title: "Auto Audience Boost",
-    description: "Automatically boosts your posts and grows your followers with Nigerian and African targeted audiences daily.",
+    description: "Automatically boosts your posts and grows your followers with Nigerian and African targeted audiences daily across all platforms including TikTok.",
     color: "from-[#F97316] to-[#EA580C]",
     badge: "🔥 Most Popular",
   },
   {
+    icon: "🌐",
+    title: "AI Landing Page Builder",
+    description: "No website? We build you one in seconds using AI. Your branded landing page goes live instantly at your own MarketPilot link — ready to capture leads.",
+    color: "from-[#10B981] to-[#4F46E5]",
+  },
+  {
     icon: "📊",
     title: "Analytics Dashboard",
-    description: "Real-time dashboard showing reach, likes, clicks, engagement trends and weekly performance reports.",
+    description: "Real-time dashboard showing reach, likes, clicks, engagement trends and daily performance reports.",
     color: "from-[#4F46E5] to-[#10B981]",
   },
   {

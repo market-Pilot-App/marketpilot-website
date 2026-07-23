@@ -96,7 +96,7 @@ export default function Hero() {
             { icon: "💼", name: "LinkedIn" },
             { icon: "✈️", name: "Telegram" },
             { icon: "🐦", name: "X/Twitter" },
-            { icon: "🎵", name: "TikTok" },
+            { icon: "🎵", name: "TikTok (Boost)" },
           ].map((p) => (
             <span key={p.name} className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs text-gray-400">
               {p.icon} {p.name}
