@@ -1,6 +1,6 @@
 const stats = [
-  { value: "71+", label: "Automated Posts Published", icon: "📝" },
-  { value: "661+", label: "Telegram Community Members", icon: "✈️" },
+  { value: "500+", label: "Automated Posts Published", icon: "📝" },
+  { value: "800+", label: "Telegram Community Members", icon: "✈️" },
   { value: "6", label: "Platforms Supported", icon: "🌍" },
   { value: "24/7", label: "Fully Autonomous Operation", icon: "🤖" },
 ];
