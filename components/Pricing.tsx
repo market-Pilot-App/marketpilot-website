@@ -17,7 +17,7 @@ const plans = [
       "Analytics dashboard",
       "24h setup time",
     ],
-    cta: "Book a Demo",
+    registerHref: "https://dashboard.marketpiloting.online/register?plan=starter",
     color: "border-white/10",
     popular: false,
   },
@@ -37,7 +37,7 @@ const plans = [
       "Advanced analytics + reporting",
       "Priority setup (12h)",
     ],
-    cta: "Book a Demo",
+    registerHref: "https://dashboard.marketpiloting.online/register?plan=growth",
     color: "border-[#4F46E5]",
     popular: true,
   },
@@ -57,7 +57,7 @@ const plans = [
       "Priority WhatsApp support",
       "Same-day setup",
     ],
-    cta: "Book a Demo",
+    registerHref: "https://dashboard.marketpiloting.online/register?plan=agency",
     color: "border-[#10B981]",
     popular: false,
   },
@@ -168,13 +168,17 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
+              <a href={plan.registerHref}
                 className={`block text-center py-3 px-6 rounded-xl font-bold text-sm transition-all ${
                   plan.popular
                     ? "bg-[#4F46E5] hover:bg-[#4338CA] text-white shadow-lg shadow-[#4F46E5]/30"
                     : "bg-white/10 hover:bg-white/20 text-white border border-white/20"
                 }`}>
-                {plan.cta} →
+                Get Started →
+              </a>
+              <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
+                className="block text-center py-2 px-6 rounded-xl text-xs text-gray-500 hover:text-gray-300 transition-all mt-2">
+                or Book a Demo
               </a>
             </div>
           ))}
