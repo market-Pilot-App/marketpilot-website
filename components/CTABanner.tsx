@@ -13,7 +13,7 @@ export default function CTABanner() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#10B981]"> on autopilot?</span>
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto mb-10">
-              Book a free 30-minute demo call. We'll show you exactly how MarketPilot works and set up your account within 24 hours.
+              Start with a free 30-minute demo call. We’ll show you exactly how MarketPilot works for your business and get your account set up.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="https://calendly.com/marketpilot2026/30min" target="_blank"

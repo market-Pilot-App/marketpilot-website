@@ -21,7 +21,7 @@ const features = [
   {
     icon: "🚀",
     title: "Auto Audience Boost",
-    description: "Automatically boosts your posts and grows your followers with Nigerian and African targeted audiences daily across all platforms including TikTok.",
+    description: "Automatically boosts your posts and grows your audience across Facebook, Instagram, Telegram, TikTok and more — running daily on autopilot.",
     color: "from-[#F97316] to-[#EA580C]",
     badge: "🔥 Most Popular",
   },
@@ -39,8 +39,8 @@ const features = [
   },
   {
     icon: "💬",
-    title: "WhatsApp Broadcast",
-    description: "Build a WhatsApp subscriber list and blast content directly to your audience — Nigeria's #1 platform.",
+    title: "Lead Capture & CRM",
+    description: "Capture leads from your AI landing page and referral links. View, filter and export your leads. Send broadcast emails to your list via Resend.",
     color: "from-[#10B981] to-[#4F46E5]",
   },
   {
@@ -57,8 +57,8 @@ const features = [
   },
   {
     icon: "📧",
-    title: "Email Marketing Automation",
-    description: "Automated welcome sequences, weekly newsletters and blog notifications sent to your email subscribers.",
+    title: "Automated Email Reports",
+    description: "Weekly performance reports delivered automatically to your inbox — reach, posts published, boost activity and growth summary.",
     color: "from-[#10B981] to-[#F97316]",
   },
 ];
