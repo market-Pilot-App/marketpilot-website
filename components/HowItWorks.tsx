@@ -2,7 +2,7 @@ const steps = [
   {
     number: "01",
     title: "Share Your Brand Details",
-    description: "You give us your brand name, social media credentials, website URL and target audience. Setup takes less than 24 hours.",
+    description: "You give us your brand details and connect your social accounts via secure OAuth. No passwords shared — setup takes less than 24 hours.",
     icon: "📋",
   },
   {

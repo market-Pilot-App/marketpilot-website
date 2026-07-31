@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Image src="/Marketpilot Logo.png" alt="MarketPilot" width={130} height={36} className="h-8 w-auto mb-4" />
             <p className="text-gray-400 text-sm leading-relaxed">
-              Africa's first autonomous marketing engine. Powering brand growth across Nigeria and the continent.
+              Autonomous marketing engine powering consistent brand growth — content, posting, boosting and reporting, all on autopilot.
             </p>
             <div className="flex gap-3 mt-4">
               <a href="https://wa.me/2348023131379" target="_blank"
@@ -59,7 +59,8 @@ export default function Footer() {
               <p className="text-xs text-gray-500 leading-relaxed">
                 MarketPilot is a product of<br />
                 <span className="text-gray-300 font-medium">Tradilink Africa Solution Limited</span><br />
-                RC: 8949081
+                RC: 8949081<br />
+                <span className="text-gray-500">NDPR Compliant • Your data is never sold or shared.</span>
               </p>
             </div>
           </div>
@@ -69,7 +70,7 @@ export default function Footer() {
           <p className="text-gray-500 text-xs">
             © 2026 MarketPilot. A product of Tradilink Africa Solution Limited. RC: 8949081
           </p>
-          <p className="text-gray-600 text-xs">Built for African businesses 🌍</p>
+          <p className="text-gray-600 text-xs">Built for businesses that mean business 🚀</p>
         </div>
       </div>
     </footer>

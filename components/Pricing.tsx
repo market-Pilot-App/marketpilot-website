@@ -345,9 +345,9 @@ export default function Pricing() {
           <div className="text-4xl mb-4">🛡️</div>
           <h3 className="text-2xl font-bold text-white mb-3">30-Day Growth Guarantee</h3>
           <p className="text-gray-300 max-w-2xl mx-auto text-sm leading-relaxed">
-            We are confident in what our engine delivers. If your social media reach or follower count does not grow
-            within your first 30 days, we will keep working for you at no extra charge until it does.
-            No questions asked.
+            If your social media reach or follower count does not grow within your first 30 days,
+            we will continue working for you at no extra charge until it does. No questions asked.
+            We only win when you grow.
           </p>
           <p className="text-gray-500 text-xs mt-4">
             * Applies to plans with audience boosting enabled. Requires social media accounts to be properly connected within 48hrs of signup.

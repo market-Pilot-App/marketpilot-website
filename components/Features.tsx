@@ -9,7 +9,7 @@ const features = [
   {
     icon: "🤖",
     title: "AI Content Generation",
-    description: "Groq-powered AI generates fresh, engaging content daily tailored to your brand voice and target audience.",
+    description: "Our proprietary AI engine generates fresh, engaging content daily — tailored to your brand voice and target audience.",
     color: "from-[#4F46E5] to-[#7C3AED]",
   },
   {
@@ -20,7 +20,7 @@ const features = [
   },
   {
     icon: "🚀",
-    title: "Auto Audience Boost",
+    title: "Smart Audience Growth & Engagement",
     description: "Automatically boosts your posts and grows your audience across Facebook, Instagram, Telegram, TikTok and more — running daily on autopilot.",
     color: "from-[#F97316] to-[#EA580C]",
     badge: "🔥 Most Popular",
@@ -50,10 +50,22 @@ const features = [
     color: "from-[#7C3AED] to-[#4F46E5]",
   },
   {
-    icon: "🎯",
-    title: "Nigerian & African Targeting",
-    description: "All boosts and content are specifically optimised for Nigerian and African audiences for maximum impact.",
+    icon: "💬",
+    title: "Auto-Reply Inbox",
+    description: "AI automatically responds to comments and DMs across your platforms — keeping your audience engaged 24/7 without lifting a finger.",
     color: "from-[#F97316] to-[#4F46E5]",
+  },
+  {
+    icon: "🛍️",
+    title: "Product Catalog",
+    description: "Showcase your products or services in a clean, shareable catalog. AI auto-generates promotional posts for each item.",
+    color: "from-[#4F46E5] to-[#10B981]",
+  },
+  {
+    icon: "📄",
+    title: "PDF Monthly Reports",
+    description: "A professionally formatted PDF report delivered to your inbox every month — covering reach, growth, posts published and boost activity.",
+    color: "from-[#10B981] to-[#7C3AED]",
   },
   {
     icon: "📧",

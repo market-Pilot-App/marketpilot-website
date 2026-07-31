@@ -8,11 +8,11 @@ const faqs = [
   },
   {
     q: "Do I need any technical skills?",
-    a: "None at all. You just provide your brand details and social media credentials. We handle the entire setup and ongoing operation. You only need to check your weekly report email.",
+    a: "None at all. You just provide your brand details and connect your accounts via secure OAuth. We handle the entire setup and ongoing operation. You only need to check your weekly report email.",
   },
   {
     q: "How long does setup take?",
-    a: "Standard setup is completed within 24 hours of receiving your credentials. Agency plan clients get same-day setup.",
+    a: "Standard setup is completed within 24 hours of receiving your account access. Agency plan clients get same-day setup.",
   },
   {
     q: "Can I cancel anytime?",
