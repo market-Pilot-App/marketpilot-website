@@ -13,7 +13,7 @@ const plans = [
       "2 platforms (Facebook + Instagram)",
       "📅 3 posts/day — 90 posts/month",
       "🤖 AI content generation (Brand DNA)",
-      "🚀 Auto boost — likes & views",
+      "🚀 AI-Optimized Organic Reach",
       "🎬 4 video posts/month",
       "📰 1 blog post/week",
       "🌐 1 AI landing page",
@@ -35,7 +35,7 @@ const plans = [
       "3 platforms (Facebook, Instagram, Telegram)",
       "📅 5 posts/day — 150 posts/month",
       "🤖 AI content generation (Brand DNA)",
-      "🚀 Auto boost — likes, views & members",
+      "🚀 Smart Engagement Scheduling",
       "🎬 8 video posts/month",
       "📰 2 blog posts/week",
       "🌐 1 AI landing page",
@@ -58,7 +58,7 @@ const plans = [
       "6 platforms (Facebook, Instagram, LinkedIn, Telegram, X/Twitter, TikTok)",
       "📅 8 posts/day — 240 posts/month",
       "🤖 AI content + Brand DNA evolution",
-      "🚀 Full auto boost across all platforms",
+      "🚀 AI-Optimized Organic Reach across all platforms",
       "🎬 20 video posts/month",
       "📰 3 blog posts/week",
       "🌐 Unlimited AI landing pages",
@@ -84,7 +84,7 @@ const plans = [
       "6 platforms per brand",
       "📅 12 posts/day — 360 posts/month per brand",
       "🤖 AI content + daily Brand DNA evolution",
-      "🚀 Maximum auto boost per brand",
+      "🚀 Maximum AI-Optimized Organic Reach per brand",
       "🎬 Unlimited video posts",
       "📰 Daily blog posts per brand",
       "🌐 Unlimited AI landing pages",
@@ -123,10 +123,9 @@ function CustomNegotiateCard() {
         💬 Let's Negotiate
       </div>
       <div className="mb-5 mt-2">
-        <h3 className="text-xl font-bold text-white mb-1">Custom Plan</h3>
+        <h3 className="text-xl font-bold text-white mb-1">Tailored Solution</h3>
         <p className="text-gray-400 text-sm">
-          Running on a tight budget? No problem. Tell us what you can afford and we'll build a scaled package around it.
-          We'd rather grow with you than lose you to inaction.
+          Need a tailored solution? Contact our team to build a custom package that aligns with your specific business goals, scale, and budget.
         </p>
       </div>
       <div className="flex-1 space-y-3 mb-6">
@@ -325,7 +324,7 @@ export default function Pricing() {
               {[
                 "8 posts/day across 6 platforms — 240 posts/month",
                 "AI generates every post using your Brand DNA",
-                "Auto-boosts posts on Facebook, Instagram, TikTok & more",
+                "AI-optimized scheduling maximizes organic reach across all platforms",
                 "Writes and publishes 3 blog posts/week",
                 "Captures leads and manages your CRM automatically",
                 "Runs 24/7 — no sick days, no holidays, no drama",
@@ -343,14 +342,14 @@ export default function Pricing() {
         {/* 30-Day Guarantee */}
         <div className="mt-10 p-8 bg-gradient-to-r from-[#10B981]/10 to-[#4F46E5]/10 border border-[#10B981]/30 rounded-2xl text-center">
           <div className="text-4xl mb-4">🛡️</div>
-          <h3 className="text-2xl font-bold text-white mb-3">30-Day Growth Guarantee</h3>
+          <h3 className="text-2xl font-bold text-white mb-3">The MarketPilot 30-Day Visibility Guarantee</h3>
           <p className="text-gray-300 max-w-2xl mx-auto text-sm leading-relaxed">
-            If your social media reach or follower count does not grow within your first 30 days,
-            we will continue working for you at no extra charge until it does. No questions asked.
-            We only win when you grow.
+            If you complete setup, connect your platforms within 48 hours of signup, and publish consistently using our AI recommendations,
+            we guarantee a measurable increase in your total post reach and impressions within 30 days.
+            If we miss this mark, we will provide an additional 30 days of strategy optimization at no extra cost.
           </p>
           <p className="text-gray-500 text-xs mt-4">
-            * Applies to plans with audience boosting enabled. Requires social media accounts to be properly connected within 48hrs of signup.
+            Applies to organic reach/impressions only. Does not cover third-party platform algorithm changes, account restrictions, or external follower purges.
           </p>
         </div>
 

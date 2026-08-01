@@ -55,21 +55,31 @@ export default function TermsOfService() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">7. Limitation of Liability</h2>
-            <p>Tradilink Africa Solution Limited shall not be liable for any indirect, incidental, or consequential damages arising from the use of MarketPilot. Our total liability shall not exceed the amount paid in the last 30 days.</p>
+            <p>Tradilink Africa Solution Limited (&apos;MarketPilot&apos;) shall not be held liable for any indirect, incidental, or consequential damages, including but not limited to: (a) loss of revenue, data, or followers; (b) account restrictions, suspensions, or bans imposed by third-party platforms (e.g., Meta, TikTok, LinkedIn) due to the Client&apos;s prior violations, content, or misuse of the Service; (c) changes to third-party API availability or algorithms. Our total liability shall not exceed the amount paid by the Client in the three (3) months preceding the claim.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">8. Intellectual Property</h2>
+            <h2 className="text-xl font-bold text-white mb-3">8. Acceptable Use Policy</h2>
+            <p>Clients agree not to use MarketPilot to: (a) violate the Terms of Service of any connected third-party social media platform; (b) send spam, unsolicited messages, or engage in artificial engagement manipulation (e.g., botting, buying followers); (c) transmit content that is illegal, hateful, or infringes on intellectual property rights. MarketPilot reserves the right to immediately suspend or terminate accounts violating this policy without refund.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">9. 30-Day Visibility Guarantee Terms</h2>
+            <p>The &apos;30-Day Visibility Guarantee&apos; is strictly defined as an increase in measurable post reach and impressions. It is explicitly void if the Client fails to connect their social media accounts within 48 hours of signup, fails to provide necessary brand assets, or if the connected social media account is restricted by the platform provider.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">10. Intellectual Property</h2>
             <p>MarketPilot and all related technology is the intellectual property of Tradilink Africa Solution Limited. You retain ownership of your brand content and social media accounts.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">9. Governing Law</h2>
+            <h2 className="text-xl font-bold text-white mb-3">11. Governing Law</h2>
             <p>These terms are governed by the laws of the Federal Republic of Nigeria. Any disputes shall be resolved in Nigerian courts.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">10. Contact</h2>
+            <h2 className="text-xl font-bold text-white mb-3">12. Contact</h2>
             <p>Tradilink Africa Solution Limited<br />RC: 8949081<br />WhatsApp: +2348023131379<br />Email: marketpilot2026@gmail.com</p>
           </section>
         </div>

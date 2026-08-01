@@ -21,7 +21,7 @@ const features = [
   {
     icon: "🚀",
     title: "Smart Audience Growth & Engagement",
-    description: "Automatically boosts your posts and grows your audience across Facebook, Instagram, Telegram, TikTok and more — running daily on autopilot.",
+    description: "We strategically schedule and optimize your content to maximize organic visibility and authentic engagement, strictly adhering to all platform community guidelines.",
     color: "from-[#F97316] to-[#EA580C]",
     badge: "🔥 Most Popular",
   },

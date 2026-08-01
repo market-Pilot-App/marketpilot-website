@@ -45,8 +45,8 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">5. Data Security</h2>
-            <p>We implement industry-standard security measures to protect your data. All data is stored on secure, encrypted servers. We do not sell your personal information to third parties.</p>
+            <h2 className="text-xl font-bold text-white mb-3">5. Data Security & NDPR Compliance</h2>
+            <p>In compliance with the Nigeria Data Protection Regulation (NDPR), Tradilink Africa Solution Limited collects and processes personal data solely for the purpose of providing and improving the MarketPilot service. We employ industry-standard encryption. We do not sell, rent, or share your data with third parties for marketing purposes. Clients retain the right to request data access, correction, or deletion by contacting <a href="mailto:support@marketpiloting.online" className="text-[#10B981] hover:underline">support@marketpiloting.online</a>.</p>
           </section>
 
           <section>

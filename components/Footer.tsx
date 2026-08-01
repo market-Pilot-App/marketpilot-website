@@ -56,12 +56,15 @@ export default function Footer() {
               ))}
             </ul>
             <div className="mt-6 p-4 bg-white/5 border border-white/10 rounded-xl">
-              <p className="text-xs text-gray-500 leading-relaxed">
-                MarketPilot is a product of<br />
-                <span className="text-gray-300 font-medium">Tradilink Africa Solution Limited</span><br />
-                RC: 8949081<br />
-                <span className="text-gray-500">NDPR Compliant • Your data is never sold or shared.</span>
+              <p className="text-xs text-gray-400 leading-relaxed">
+                MarketPilot is a proud product of <span className="text-white font-medium">Tradilink Africa Solution Limited</span>. We are fully committed to the Nigeria Data Protection Regulation (NDPR). Your business data is encrypted, never sold to third parties, and used solely to power your marketing automation.
               </p>
+              <div className="flex gap-3 mt-3">
+                <Link href="/privacy" className="text-[#10B981] hover:underline text-xs">Privacy Policy</Link>
+                <span className="text-gray-600 text-xs">|</span>
+                <Link href="/terms" className="text-[#10B981] hover:underline text-xs">Terms of Service</Link>
+              </div>
+              <p className="text-xs text-gray-600 mt-2">RC: 8949081</p>
             </div>
           </div>
         </div>
