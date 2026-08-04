@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "https://marketpilot-backend.onrender.com";
+const API = process.env.NEXT_PUBLIC_API_URL || "https://marketpiloting-engine-backend.onrender.com";
 
 const PLATFORM_EMOJI: Record<string, string> = {
   facebook: "📘",
