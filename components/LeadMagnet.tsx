@@ -117,7 +117,7 @@ export default function LeadMagnet() {
             {!emailSent ? (
               <div className="bg-[#4F46E5]/10 border border-[#4F46E5]/30 rounded-2xl p-6 mt-6">
                 <p className="text-white font-bold mb-1">Want MarketPilot to post these for you — automatically?</p>
-                <p className="text-gray-400 text-sm mb-4">Drop your email and we'll send you the full setup guide + a special offer.</p>
+                <p className="text-gray-400 text-sm mb-4">Drop your email and we&apos;ll send you your 3 posts + a special setup offer.</p>
                 <form onSubmit={saveEmail} className="flex gap-3">
                   <input
                     type="email"
@@ -138,13 +138,13 @@ export default function LeadMagnet() {
             ) : (
               <div className="bg-[#10B981]/10 border border-[#10B981]/30 rounded-2xl p-6 text-center mt-6">
                 <p className="text-2xl mb-2">🎉</p>
-                <p className="text-white font-bold mb-1">You're in! Check your inbox.</p>
-                <p className="text-gray-400 text-sm mb-4">Ready to automate all of this?</p>
+                <p className="text-white font-bold mb-1">Got it! We&apos;ll be in touch.</p>
+                <p className="text-gray-400 text-sm mb-4">Ready to put your marketing on autopilot?</p>
                 <a
                   href="https://dashboard.marketpiloting.online/register"
                   className="inline-block px-6 py-3 bg-[#4F46E5] hover:bg-[#4338CA] text-white font-bold text-sm rounded-xl transition"
                 >
-                  Start Free Trial →
+                  Start My Plan →
                 </a>
               </div>
             )}

@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import WhoIsItFor from "@/components/WhoIsItFor";
 import Pricing from "@/components/Pricing";
+import Guarantee from "@/components/Guarantee";
 import Testimonial from "@/components/Testimonial";
 import FAQ from "@/components/FAQ";
 import LeadMagnet from "@/components/LeadMagnet";
@@ -21,6 +22,7 @@ export default function Home() {
       <Features />
       <WhoIsItFor />
       <Pricing />
+      <Guarantee />
       <Testimonial />
       <FAQ />
       <LeadMagnet />
