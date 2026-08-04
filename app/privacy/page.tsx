@@ -45,8 +45,18 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">5. Data Security & NDPR Compliance</h2>
-            <p>In compliance with the Nigeria Data Protection Regulation (NDPR), Tradilink Africa Solution Limited collects and processes personal data solely for the purpose of providing and improving the MarketPilot service. We employ industry-standard encryption. We do not sell, rent, or share your data with third parties for marketing purposes. Clients retain the right to request data access, correction, or deletion by contacting <a href="mailto:support@marketpiloting.online" className="text-[#10B981] hover:underline">support@marketpiloting.online</a>.</p>
+            <h2 className="text-xl font-bold text-white mb-3">5. Data Security &amp; NDPR Compliance</h2>
+            <p>In compliance with the Nigeria Data Protection Regulation (NDPR) and the Nigeria Data Protection Act 2023 (NDPA), Tradilink Africa Solution Limited collects and processes personal data solely for the purpose of providing and improving the MarketPilot service. We employ industry-standard encryption. We do not sell, rent, or share your data with third parties for marketing purposes. Clients retain the right to request data access, correction, or deletion by contacting <a href="mailto:support@marketpiloting.online" className="text-[#10B981] hover:underline">support@marketpiloting.online</a>.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">5b. Data Retention</h2>
+            <p>We retain your personal data for as long as your account is active or as needed to provide services. Upon account deletion, personal data is purged within 30 days, except where retention is required by Nigerian law. Anonymised analytics data may be retained indefinitely.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">5c. Consent &amp; Legal Basis</h2>
+            <p>By creating an account and checking the Terms of Service checkbox at registration, you provide explicit consent for MarketPilot to collect and process your personal data as described in this policy. You may withdraw consent at any time by deleting your account or contacting support. Withdrawal of consent does not affect the lawfulness of processing carried out before withdrawal.</p>
           </section>
 
           <section>

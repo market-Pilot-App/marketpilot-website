@@ -8,19 +8,19 @@ const features = [
   },
   {
     icon: "🤖",
-    title: "AI Content Generation",
+    title: "Daily AI Content, Written for Your Brand",
     description: "Our proprietary AI engine generates fresh, engaging content daily — tailored to your brand voice and target audience.",
     color: "from-[#4F46E5] to-[#7C3AED]",
   },
   {
     icon: "📅",
-    title: "Multi-Platform Auto-Posting",
+    title: "Auto-Post to 6 Platforms, Every Single Day",
     description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter on a smart schedule. TikTok audience boosting included.",
     color: "from-[#10B981] to-[#059669]",
   },
   {
     icon: "🚀",
-    title: "Smart Audience Growth & Engagement",
+    title: "Grow Your Audience Without Spending on Ads",
     description: "We strategically schedule and optimize your content to maximize organic visibility and authentic engagement, strictly adhering to all platform community guidelines.",
     color: "from-[#F97316] to-[#EA580C]",
     badge: "🔥 Most Popular",
@@ -39,7 +39,7 @@ const features = [
   },
   {
     icon: "💬",
-    title: "Lead Capture & CRM",
+    title: "Capture Leads While You Sleep",
     description: "Capture leads from your AI landing page and referral links. View, filter and export your leads. Send broadcast emails to your list via Resend.",
     color: "from-[#10B981] to-[#4F46E5]",
   },

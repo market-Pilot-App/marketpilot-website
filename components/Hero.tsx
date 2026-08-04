@@ -14,6 +14,12 @@ const headlines = [
     line2: "",
     highlight2: "",
   },
+  {
+    line1: "Never Miss a DM Sale Again.",
+    highlight1: "",
+    line2: "We Post, Engage, and Capture Leads",
+    highlight2: "While You Sleep.",
+  },
 ];
 
 export default function Hero() {
@@ -70,9 +76,9 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-          MarketPilot posts daily to Facebook, Instagram, LinkedIn, Telegram & more —
+          MarketPilot posts daily to Facebook, Instagram, LinkedIn, Telegram &amp; more —
           generates AI content, boosts your audience, and sends you weekly reports.
-          <span className="text-white font-medium"> Boost engagement without lifting a finger. You focus on your business. We handle your growth.</span>
+          <span className="text-white font-medium"> No agency fees. No hiring. Just results — on autopilot.</span>
         </p>
 
         {/* CTAs */}
