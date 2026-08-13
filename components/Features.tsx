@@ -15,7 +15,7 @@ const features = [
   {
     icon: "📅",
     title: "Auto-Post to 6 Platforms, Every Single Day",
-    description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter on a smart schedule. TikTok audience boosting included.",
+    description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter on a smart schedule. TikTok audience boosting (likes, views, followers) included. X/Twitter requires optional Twitter API access.",
     color: "from-[#10B981] to-[#059669]",
   },
   {
