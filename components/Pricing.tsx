@@ -56,6 +56,7 @@ const plans = [
     description: "For growing brands that want full multi-platform automation and aggressive audience growth.",
     features: [
       "6 platforms (Facebook, Instagram, LinkedIn, Telegram, X/Twitter, TikTok)",
+      "*X/Twitter & TikTok: AI content + organic boost only",
       "📅 8 posts/day — 240 posts/month",
       "🤖 AI content + Brand DNA evolution",
       "🚀 AI-Optimized Organic Reach across all platforms",
@@ -82,6 +83,7 @@ const plans = [
     features: [
       "11 brands/sub-campaigns under 1 account",
       "6 platforms per brand",
+      "*X/Twitter & TikTok: AI content + organic boost only",
       "📅 12 posts/day — 360 posts/month per brand",
       "🤖 AI content + daily Brand DNA evolution",
       "🚀 Maximum AI-Optimized Organic Reach per brand",
