@@ -10,7 +10,7 @@ const plans = [
     monthlyUSD: 19,
     description: "For solo entrepreneurs and micro-businesses taking their first step into automated marketing.",
     features: [
-      "2 platforms (Facebook + Instagram)",
+      "2 platforms (Facebook + X/Twitter)",
       "📅 3 posts/day — 90 posts/month",
       "🤖 AI content generation (Brand DNA)",
       "🚀 AI-Optimized Organic Reach (likes + views)",
@@ -32,7 +32,7 @@ const plans = [
     monthlyUSD: 47,
     description: "For small businesses ready to build a consistent presence across multiple platforms.",
     features: [
-      "3 platforms (Facebook, Instagram, Telegram)",
+      "6 platforms (Facebook, X/Twitter, Instagram, Telegram, TikTok, Blog)",
       "📅 5 posts/day — 150 posts/month",
       "🤖 AI content generation (Brand DNA)",
       "🚀 Smart Engagement Scheduling",
@@ -41,7 +41,6 @@ const plans = [
       "📰 2 blog posts/week",
       "🌐 1 AI landing page",
       "💡 5 news hijacks/week",
-      "🌍 Website traffic boost",
       "📊 Analytics dashboard",
       "📧 Weekly email report",
       "First post live within 24hrs",
@@ -56,7 +55,7 @@ const plans = [
     monthlyUSD: 94,
     description: "For growing brands that want full multi-platform automation and aggressive audience growth.",
     features: [
-      "6 platforms (Facebook, Instagram, LinkedIn, Telegram, X/Twitter, TikTok)",
+      "7 platforms (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog)",
       "*TikTok: AI content + organic boost only",
       "*X/Twitter: connect via OAuth — auto-post + boost included",
       "📅 8 posts/day — 240 posts/month",
@@ -69,7 +68,6 @@ const plans = [
       "💡 Daily news hijacking",
       "🔍 Competitor monitoring (3 competitors)",
       "👥 Full CRM + lead capture",
-      "🌍 Website & YouTube traffic boost",
       "📊 Advanced analytics + platform breakdown",
       "⚡ Priority WhatsApp support",
       "First post live within 12hrs",
@@ -85,7 +83,7 @@ const plans = [
     description: "For serious single-brand businesses that want agency-level power without managing multiple accounts.",
     features: [
       "1 brand — full agency-level automation",
-      "6 platforms (Facebook, Instagram, LinkedIn, Telegram, X/Twitter, TikTok) + YouTube + Website",
+      "9 platforms (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog, YouTube, Website)",
       "*TikTok: AI content + organic boost only",
       "*X/Twitter: connect via OAuth — auto-post + boost included",
       "📅 12 posts/day — 360 posts/month",
@@ -114,7 +112,7 @@ const plans = [
     description: "For marketing agencies and multi-brand businesses. Manage up to 11 brands under one account.",
     features: [
       "11 brands/sub-campaigns under 1 account",
-      "6 platforms per brand + YouTube + Website",
+      "9 platforms per brand (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog, YouTube, Website)",
       "*TikTok: AI content + organic boost only",
       "*X/Twitter: connect via OAuth — auto-post + boost included",
       "📅 12 posts/day — 360 posts/month per brand",
