@@ -11,6 +11,7 @@ const plans = [
     description: "For solo entrepreneurs and micro-businesses taking their first step into automated marketing.",
     features: [
       "2 platforms (Facebook + X/Twitter)",
+      "*X/Twitter: requires optional Twitter API ($100/mo from developer.x.com) — without it, captions saved to Content Library",
       "📅 3 posts/day — 90 posts/month",
       "🤖 AI content generation (Brand DNA)",
       "🚀 AI-Optimized Organic Reach (likes + views)",
@@ -225,6 +226,14 @@ export default function Pricing() {
           <p className="text-gray-400 max-w-2xl mx-auto">
             No hidden fees. No long-term contracts. Cancel anytime. All plans include a free demo call before you pay.
           </p>
+
+          {/* Scarcity notice */}
+          <div className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 bg-[#F97316]/10 border border-[#F97316]/30 rounded-full">
+            <span className="w-2 h-2 bg-[#F97316] rounded-full animate-pulse flex-shrink-0" />
+            <span className="text-sm text-[#F97316] font-medium">
+              We onboard a maximum of 10 new clients per week to maintain setup quality — slots are limited.
+            </span>
+          </div>
 
           {/* Monthly / Yearly toggle */}
           <div className="flex items-center justify-center gap-4 mt-8">

@@ -76,9 +76,9 @@ export default function Hero() {
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
-          MarketPilot posts daily to Facebook, Instagram, LinkedIn, Telegram &amp; more —
-          generates AI content, boosts your audience, and sends you weekly reports.
-          <span className="text-white font-medium"> No agency fees. No hiring. Just results — on autopilot.</span>
+          Most businesses lose customers every day — not because their product is bad, but because they&apos;re invisible online.
+          MarketPilot fixes that. AI content written for your brand, posted daily across 9 platforms, audience boosted, leads captured — and a weekly report in your inbox.
+          <span className="text-white font-medium"> No agency. No hiring. No stress. Just growth — on autopilot.</span>
         </p>
 
         {/* CTAs */}

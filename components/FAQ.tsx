@@ -8,11 +8,11 @@ const faqs = [
   },
   {
     q: "Do I need any technical skills?",
-    a: "None at all. You just provide your brand details and connect your accounts via secure OAuth. We handle the entire setup and ongoing operation. You only need to check your weekly report email.",
+    a: "None at all. The dashboard is built for business owners, not developers. You connect your social accounts via a simple OAuth button (like logging in with Google), fill in your brand details, and the engine takes over. If you can use WhatsApp, you can set up MarketPilot.",
   },
   {
     q: "How long does setup take?",
-    a: "Standard setup is completed within 24 hours of receiving your account access. Agency plan clients get same-day setup.",
+    a: "Most clients are fully set up and live within 30 minutes to a few hours. You connect your accounts, configure your Brand DNA, and the engine starts generating and scheduling posts immediately. Your first post goes live within 6–48 hours depending on your plan.",
   },
   {
     q: "Can I cancel anytime?",

@@ -1,20 +1,20 @@
 const steps = [
   {
     number: "01",
-    title: "Share Your Brand Details",
-    description: "You give us your brand details and connect your social accounts via secure OAuth. No passwords shared — setup takes less than 24 hours.",
-    icon: "📋",
+    title: "Sign Up & Connect Your Accounts",
+    description: "Create your account, pick your plan, and connect your social platforms via secure OAuth — no passwords shared. The whole process takes less than 30 minutes and requires zero technical skills.",
+    icon: "📱",
   },
   {
     number: "02",
-    title: "We Configure Your Engine",
-    description: "We set up your autonomous marketing engine — AI content angles, posting schedule, boost settings and analytics dashboard.",
-    icon: "⚙️",
+    title: "Configure Your Brand DNA",
+    description: "Tell the engine about your business — your tone, audience, products, and goals. Our Brand DNA system uses this to make sure every post, blog, and caption sounds exactly like you.",
+    icon: "🧬",
   },
   {
     number: "03",
-    title: "Sit Back & Watch It Grow",
-    description: "MarketPilot posts daily, boosts your audience, captures leads and sends you weekly performance reports. Fully automated.",
+    title: "The Engine Runs. You Focus on Business.",
+    description: "From that point, MarketPilot posts daily across all your platforms, boosts your audience, captures leads, and sends you a weekly performance report. You don't touch it — it just runs.",
     icon: "🚀",
   },
 ];
@@ -24,11 +24,11 @@ export default function HowItWorks() {
     <section className="py-24 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <span className="text-[#10B981] text-sm font-semibold uppercase tracking-widest">We Simplify the Process</span>
+          <span className="text-[#10B981] text-sm font-semibold uppercase tracking-widest">Simple Setup. Powerful Results.</span>
           <h2 className="text-3xl sm:text-5xl font-bold text-white mt-3 mb-4">
-            Up and running within <span className="text-[#4F46E5]">24–72 hours</span>
+            Up and running in <span className="text-[#4F46E5]">under 30 minutes</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">No technical skills required. We handle everything from setup to daily operation.</p>
+          <p className="text-gray-400 max-w-2xl mx-auto">No technical skills required. You set it up once — the engine handles everything from that point forward.</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

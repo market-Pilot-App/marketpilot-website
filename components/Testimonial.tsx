@@ -8,7 +8,7 @@ export default function Testimonial() {
         </h2>
 
         <div className="p-8 bg-white/5 border border-[#4F46E5]/30 rounded-2xl relative">
-          <div className="text-5xl text-[#4F46E5]/30 font-serif absolute top-4 left-6">"</div>
+          <div className="text-5xl text-[#4F46E5]/30 font-serif absolute top-4 left-6">&quot;</div>
           <p className="text-lg sm:text-xl text-gray-300 leading-relaxed mb-8 relative z-10">
             MarketPilot has completely transformed how we handle social media. It posts daily across all our platforms,
             grows our Telegram community automatically, and the weekly reports keep us informed without lifting a finger.
@@ -16,17 +16,20 @@ export default function Testimonial() {
           </p>
           <div className="flex items-center justify-center gap-4">
             <div className="w-12 h-12 bg-gradient-to-br from-[#4F46E5] to-[#10B981] rounded-full flex items-center justify-center text-white font-bold text-lg">
-              R
+              RA
             </div>
             <div className="text-left">
-              <p className="text-white font-semibold">Marketing Team</p>
-              <p className="text-gray-400 text-sm">A leading African news platform, Nigeria</p>
+              <p className="text-white font-semibold">ReportAfrica</p>
+              <p className="text-gray-400 text-sm">News &amp; Media Platform, Nigeria</p>
             </div>
           </div>
         </div>
 
-        {/* Stats from live system */}
-        <div className="grid grid-cols-3 gap-6 mt-12">
+        {/* Live system stats */}
+        <div className="mt-10 mb-4">
+          <p className="text-xs text-gray-500 uppercase tracking-widest">Live results from ReportAfrica&apos;s account</p>
+        </div>
+        <div className="grid grid-cols-3 gap-6">
           {[
             { value: "661+", label: "Telegram Members Grown" },
             { value: "71+", label: "Posts Auto-Published" },

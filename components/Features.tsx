@@ -45,16 +45,10 @@ const features = [
   },
   {
     icon: "🎬",
-    title: "YouTube Video Posting & Boost",
-    description: "Upload a video once — MarketPilot posts it to YouTube (and other platforms) automatically at your scheduled time. AI generates the caption. Views, likes and subscriber boosts applied per your plan.",
+    title: "YouTube & Multi-Platform Video Publishing",
+    description: "Upload one video — MarketPilot posts it to YouTube, Facebook, Instagram, LinkedIn and Telegram simultaneously at your scheduled time. AI generates captions automatically. Views, likes and subscriber boosts applied per your plan.",
     color: "from-[#F97316] to-[#7C3AED]",
     badge: "✨ New",
-  },
-  {
-    icon: "📹",
-    title: "Video Queue & Multi-Platform Publishing",
-    description: "Upload one video and publish it to Facebook, Instagram, LinkedIn, Telegram and YouTube simultaneously — scheduled or instant. AI transcribes and generates captions automatically.",
-    color: "from-[#7C3AED] to-[#F97316]",
   },
   {
     icon: "📰",

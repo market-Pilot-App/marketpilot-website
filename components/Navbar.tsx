@@ -31,6 +31,10 @@ export default function Navbar() {
               className="text-sm text-gray-400 hover:text-white transition-colors">
               💬 WhatsApp
             </a>
+            <a href="https://dashboard.marketpiloting.com/login"
+              className="text-sm text-gray-400 hover:text-white transition-colors">
+              Login
+            </a>
             <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
               className="px-4 py-2 bg-[#10B981] hover:bg-[#059669] text-white text-sm font-semibold rounded-lg transition-colors">
               Book a Free Demo
@@ -53,6 +57,10 @@ export default function Navbar() {
               {item}
             </a>
           ))}
+          <a href="https://dashboard.marketpiloting.com/login"
+            className="block text-sm text-gray-400 hover:text-white py-2">
+            Login to Dashboard
+          </a>
           <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
             className="block w-full text-center px-4 py-2.5 bg-[#10B981] text-white text-sm font-semibold rounded-lg">
             Book a Free Demo

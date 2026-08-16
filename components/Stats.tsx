@@ -1,8 +1,8 @@
 const stats = [
   { value: "50,000+", label: "AI Posts Generated", icon: "📝" },
-  { value: "₦15M+ saved", label: "In Agency Fees by Clients", icon: "💰" },
+  { value: "500+", label: "Posts Published Per Month", icon: "🚀" },
   { value: "9", label: "Platforms Supported", icon: "🌍" },
-  { value: "24/7", label: "Fully Autonomous Operation", icon: "🤖" },
+  { value: "48hrs", label: "Average Setup Time", icon: "⚡" },
 ];
 
 export default function Stats() {
