@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     q: "What platforms do you support?",
-    a: "We post organically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter. X/Twitter full auto-posting requires an optional Twitter API account ($100/month from developer.x.com) — without it, AI-generated captions are saved to your Content Library for manual posting. TikTok is supported for AI content generation and audience boosting (likes, views, followers) via our SMM system. Blog auto-publishing is also included on Growth and Agency plans.",
+    a: "We post organically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter. YouTube is supported via our Video Queue — upload a video and it auto-posts to your YouTube channel at the scheduled time (Starter plan and above). X/Twitter full auto-posting requires an optional Twitter API account ($100/month from developer.x.com) — without it, AI-generated captions are saved to your Content Library for manual posting. TikTok is supported for AI content generation and audience boosting (likes, views, followers) via our SMM system. Blog auto-publishing is also included on Growth and Agency plans.",
   },
   {
     q: "Will the content sound like my brand?",

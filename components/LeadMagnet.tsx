@@ -141,7 +141,7 @@ export default function LeadMagnet() {
                 <p className="text-white font-bold mb-1">Got it! We&apos;ll be in touch.</p>
                 <p className="text-gray-400 text-sm mb-4">Ready to put your marketing on autopilot?</p>
                 <a
-                  href="https://dashboard.marketpiloting.online/register"
+                  href="https://dashboard.marketpiloting.com/register"
                   className="inline-block px-6 py-3 bg-[#4F46E5] hover:bg-[#4338CA] text-white font-bold text-sm rounded-xl transition"
                 >
                   Start My Plan →

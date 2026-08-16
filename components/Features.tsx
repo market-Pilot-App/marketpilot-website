@@ -14,8 +14,8 @@ const features = [
   },
   {
     icon: "📅",
-    title: "Auto-Post to 6 Platforms, Every Single Day",
-    description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter on a smart schedule. TikTok audience boosting (likes, views, followers) included. X/Twitter requires optional Twitter API access.",
+    title: "Auto-Post to 9 Platforms, Every Single Day",
+    description: "Posts automatically to Facebook, Instagram, LinkedIn, Telegram, X/Twitter, YouTube and more on a smart schedule. TikTok audience boosting included. X/Twitter requires optional Twitter API access.",
     color: "from-[#10B981] to-[#059669]",
   },
   {
@@ -44,8 +44,18 @@ const features = [
     color: "from-[#10B981] to-[#4F46E5]",
   },
   {
-    icon: "📰",
-    title: "Blog Auto-Publishing",
+    icon: "🎬",
+    title: "YouTube Video Posting & Boost",
+    description: "Upload a video once — MarketPilot posts it to YouTube (and other platforms) automatically at your scheduled time. AI generates the caption. Views, likes and subscriber boosts applied per your plan.",
+    color: "from-[#F97316] to-[#7C3AED]",
+    badge: "✨ New",
+  },
+  {
+    icon: "📹",
+    title: "Video Queue & Multi-Platform Publishing",
+    description: "Upload one video and publish it to Facebook, Instagram, LinkedIn, Telegram and YouTube simultaneously — scheduled or instant. AI transcribes and generates captions automatically.",
+    color: "from-[#7C3AED] to-[#F97316]",
+  },
     description: "AI writes and publishes SEO-optimised blog articles to your website automatically every week.",
     color: "from-[#7C3AED] to-[#4F46E5]",
   },

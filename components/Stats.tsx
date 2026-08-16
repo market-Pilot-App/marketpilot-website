@@ -1,7 +1,7 @@
 const stats = [
   { value: "50,000+", label: "AI Posts Generated", icon: "📝" },
   { value: "₦15M+ saved", label: "In Agency Fees by Clients", icon: "💰" },
-  { value: "6", label: "Platforms Supported", icon: "🌍" },
+  { value: "9", label: "Platforms Supported", icon: "🌍" },
   { value: "24/7", label: "Fully Autonomous Operation", icon: "🤖" },
 ];
 
