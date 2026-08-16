@@ -56,6 +56,9 @@ const features = [
     description: "Upload one video and publish it to Facebook, Instagram, LinkedIn, Telegram and YouTube simultaneously — scheduled or instant. AI transcribes and generates captions automatically.",
     color: "from-[#7C3AED] to-[#F97316]",
   },
+  {
+    icon: "📰",
+    title: "Blog Auto-Publishing",
     description: "AI writes and publishes SEO-optimised blog articles to your website automatically every week.",
     color: "from-[#7C3AED] to-[#4F46E5]",
   },
