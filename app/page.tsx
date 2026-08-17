@@ -15,6 +15,31 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            name: "MarketPilot",
+            url: "https://www.marketpiloting.com",
+            description: "Africa's first autonomous marketing engine. AI content generation, multi-platform auto-posting, audience boosting and analytics — all on autopilot.",
+            applicationCategory: "BusinessApplication",
+            operatingSystem: "Web",
+            offers: {
+              "@type": "AggregateOffer",
+              priceCurrency: "NGN",
+              lowPrice: "29999",
+              highPrice: "450000",
+            },
+            provider: {
+              "@type": "Organization",
+              name: "MarketPilot",
+              url: "https://www.marketpiloting.com",
+            },
+          }),
+        }}
+      />
       <Navbar />
       <Hero />
       <Stats />

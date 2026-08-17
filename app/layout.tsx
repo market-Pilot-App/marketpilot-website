@@ -2,24 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.marketpiloting.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "MarketPilot — Automate Your Social Media. Guarantee Your Growth.",
   description: "Africa's first autonomous marketing engine. AI content generation, multi-platform auto-posting, audience boosting and analytics — all on autopilot.",
   keywords: "social media automation, Africa, Nigeria, marketing, AI content, auto-posting, audience growth",
   openGraph: {
     title: "MarketPilot — Automate Your Social Media. Guarantee Your Growth.",
     description: "Africa's first autonomous marketing engine. AI content, auto-posting, audience boosting — all on autopilot.",
-    url: "https://marketpiloting.online",
+    url: "https://www.marketpiloting.com",
     siteName: "MarketPilot",
-    images: [{ url: "/logo.png", width: 1200, height: 630, alt: "MarketPilot" }],
+    images: [{ url: "/favicon.png", width: 1200, height: 630, alt: "MarketPilot" }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "MarketPilot — Automate Your Social Media",
     description: "Africa's first autonomous marketing engine.",
-    images: ["/logo.png"],
+    images: ["/favicon.png"],
   },
-
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
