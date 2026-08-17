@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { posts } from "../page";
+import { posts } from "../posts-data";
 
 const postContent: Record<string, { intro: string; sections: { heading: string; body: string }[] }> = {
   "why-african-businesses-need-social-media-automation": {
