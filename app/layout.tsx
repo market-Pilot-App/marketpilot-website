@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     description: "Africa's first autonomous marketing engine.",
     images: ["/favicon.png"],
   },
+  verification: {
+    google: "google5e246cff03b7ee5a",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
