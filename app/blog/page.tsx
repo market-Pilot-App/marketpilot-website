@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://marketpiloting.online/blog" },
 };
 
-export const posts = [
+const posts = [
   {
     slug: "why-african-businesses-need-social-media-automation",
     title: "Why African Businesses Need Social Media Automation in 2025",
