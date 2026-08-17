@@ -23,6 +23,7 @@ export default function Navbar() {
                 {item}
               </a>
             ))}
+            <a href="/contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
           </div>
 
           {/* CTA */}
@@ -57,6 +58,7 @@ export default function Navbar() {
               {item}
             </a>
           ))}
+          <a href="/contact" onClick={() => setOpen(false)} className="block text-sm text-gray-400 hover:text-white py-2">Contact</a>
           <a href="https://dashboard.marketpiloting.com/login"
             className="block text-sm text-gray-400 hover:text-white py-2">
             Login to Dashboard
