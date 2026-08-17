@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     images: ["/favicon.png"],
   },
   verification: {
-    google: "google5e246cff03b7ee5a",
+    google: "3_0EMdspUfun8ekzXRRDq4_-8DUd7yNFQ_e2pxWOBwU",
   },
 };
 
