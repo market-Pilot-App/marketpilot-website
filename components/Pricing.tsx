@@ -5,9 +5,27 @@ const YEARLY_DISCOUNT = 0.30;
 
 const plans = [
   {
+    name: "Micro",
+    monthlyNaira: 5999,
+    monthlyUSD: 4,
+    description: "For street vendors, market traders and 1-person businesses taking their very first step online.",
+    features: [
+      "1 platform (Facebook only)",
+      "📅 2 posts/day — 60 posts/month",
+      "🤖 AI content generation (Brand DNA)",
+      "🚀 AI-Optimized Organic Reach (likes + views)",
+      "📊 Analytics dashboard",
+      "📧 Weekly email report",
+      "First post live within 72hrs",
+    ],
+    registerHref: "https://dashboard.marketpiloting.com/register?plan=micro",
+    color: "border-white/10",
+    popular: false,
+  },
+  {
     name: "Solo",
-    monthlyNaira: 29999,
-    monthlyUSD: 19,
+    monthlyNaira: 15000,
+    monthlyUSD: 9,
     description: "For solo entrepreneurs and micro-businesses taking their first step into automated marketing.",
     features: [
       "2 platforms (Facebook + X/Twitter)",
@@ -29,8 +47,8 @@ const plans = [
   },
   {
     name: "Starter",
-    monthlyNaira: 75000,
-    monthlyUSD: 47,
+    monthlyNaira: 35000,
+    monthlyUSD: 22,
     description: "For small businesses ready to build a consistent presence across multiple platforms.",
     features: [
       "6 platforms (Facebook, X/Twitter, Instagram, Telegram, TikTok, Blog)",
@@ -53,8 +71,8 @@ const plans = [
   },
   {
     name: "Growth",
-    monthlyNaira: 150000,
-    monthlyUSD: 94,
+    monthlyNaira: 75000,
+    monthlyUSD: 47,
     description: "For growing brands that want full multi-platform automation and aggressive audience growth.",
     features: [
       "7 platforms (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog)",
@@ -81,8 +99,8 @@ const plans = [
   },
   {
     name: "Pro",
-    monthlyNaira: 250000,
-    monthlyUSD: 156,
+    monthlyNaira: 185000,
+    monthlyUSD: 116,
     description: "For serious single-brand businesses that want agency-level power without managing multiple accounts.",
     features: [
       "1 brand — full agency-level automation",
@@ -110,8 +128,8 @@ const plans = [
   },
   {
     name: "Agency",
-    monthlyNaira: 450000,
-    monthlyUSD: 281,
+    monthlyNaira: 495000,
+    monthlyUSD: 309,
     description: "For marketing agencies and multi-brand businesses. Manage up to 11 brands under one account.",
     features: [
       "11 brands/sub-campaigns under 1 account",
@@ -364,7 +382,7 @@ export default function Pricing() {
 
           <div className="p-8 bg-[#4F46E5]/10 border border-[#4F46E5]/40 rounded-2xl">
             <p className="text-[#10B981] text-xs font-semibold uppercase tracking-widest mb-3">MarketPilot Growth Plan</p>
-            <h3 className="text-xl font-bold text-white mb-4">₦150,000/month — full AI marketing engine</h3>
+            <h3 className="text-xl font-bold text-white mb-4">₦75,000/month — full AI marketing engine</h3>
             <ul className="space-y-3">
               {[
                 "8 posts/day across 6 platforms — 240 posts/month",
