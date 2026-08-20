@@ -161,69 +161,36 @@ function formatNaira(n: number) {
   return "₦" + n.toLocaleString("en-NG");
 }
 
-function CustomNegotiateCard() {
-  const [name, setName] = useState("");
-  const [budget, setBudget] = useState("");
-
-  const handleSubmit = () => {
-    const msg = encodeURIComponent(
-      `Hi MarketPilot! My name is ${name || "there"} and my marketing budget is ${budget || "flexible"}. I'd like to discuss what you can build for me.`
-    );
+function NegotiateBanner() {
+  const handleClick = () => {
+    const msg = encodeURIComponent("Hi MarketPilot! I'd like to discuss a custom marketing package for my business.");
     window.open(`https://wa.me/2348023131379?text=${msg}`, "_blank");
   };
 
   return (
-    <div className="relative p-8 bg-gradient-to-br from-[#F97316]/10 to-[#4F46E5]/10 border-2 border-[#F97316]/50 rounded-2xl flex flex-col">
-      <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1.5 bg-[#F97316] text-white text-xs font-bold rounded-full whitespace-nowrap">
-        💬 Let's Negotiate
-      </div>
-      <div className="mb-5 mt-2">
-        <h3 className="text-xl font-bold text-white mb-1">Tailored Solution</h3>
-        <p className="text-gray-400 text-sm">
-          Need a tailored solution? Contact our team to build a custom package that aligns with your specific business goals, scale, and budget.
-        </p>
-      </div>
-      <div className="flex-1 space-y-3 mb-6">
-        <div>
-          <label className="text-xs text-gray-400 mb-1.5 block">Your Name</label>
-          <input
-            type="text"
-            placeholder="e.g. Chidi Okafor"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none focus:border-[#F97316]/60"
-          />
+    <div className="mt-6 relative overflow-hidden rounded-2xl border border-[#F97316]/30 bg-gradient-to-r from-[#F97316]/10 via-[#4F46E5]/10 to-[#F97316]/10 px-8 py-6">
+      <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div className="flex items-center gap-4">
+          <div className="w-12 h-12 rounded-xl bg-[#F97316]/20 flex items-center justify-center text-2xl flex-shrink-0">💬</div>
+          <div>
+            <p className="text-white font-bold text-lg">Need a tailored solution?</p>
+            <p className="text-gray-400 text-sm mt-0.5">Tell us your budget — we'll build a custom package around it. No pressure, just a conversation.</p>
+          </div>
         </div>
-        <div>
-          <label className="text-xs text-gray-400 mb-1.5 block">Your Monthly Budget</label>
-          <input
-            type="text"
-            placeholder="e.g. ₦30,000 or $20"
-            value={budget}
-            onChange={(e) => setBudget(e.target.value)}
-            className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-gray-500 text-sm focus:outline-none focus:border-[#F97316]/60"
-          />
-        </div>
-        <ul className="space-y-2 pt-1">
-          {[
-            "We work with your budget",
-            "Scaled package built around you",
-            "No pressure — just a conversation",
-            "Start small, upgrade as you grow",
-          ].map((f, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-              <span className="text-[#F97316] mt-0.5 flex-shrink-0">✓</span>
-              {f}
-            </li>
+        <div className="flex items-center gap-3 flex-shrink-0">
+          {["We work with your budget", "Start small, grow big", "No long-term lock-in"].map((t, i) => (
+            <span key={i} className="hidden lg:flex items-center gap-1.5 text-xs text-gray-400 whitespace-nowrap">
+              <span className="text-[#F97316]">✓</span>{t}
+            </span>
           ))}
-        </ul>
+          <button
+            onClick={handleClick}
+            className="ml-4 px-6 py-3 bg-[#F97316] hover:bg-[#EA6C0A] text-white font-bold text-sm rounded-xl transition-all shadow-lg shadow-[#F97316]/20 whitespace-nowrap"
+          >
+            💬 Chat on WhatsApp →
+          </button>
+        </div>
       </div>
-      <button
-        onClick={handleSubmit}
-        className="block w-full text-center py-3 px-6 rounded-xl font-bold text-sm bg-[#F97316] hover:bg-[#EA6C0A] text-white transition-all shadow-lg shadow-[#F97316]/30"
-      >
-        💬 Chat With Us on WhatsApp →
-      </button>
     </div>
   );
 }
@@ -270,7 +237,7 @@ export default function Pricing() {
         </div>
 
         {/* Plan cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-5">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {plans.map((plan) => {
             const monthlyNaira = plan.monthlyNaira;
             const yearlyNaira = Math.round(monthlyNaira * 0.70);
@@ -344,12 +311,12 @@ export default function Pricing() {
               </div>
             );
           })}
-
-          {/* Custom negotiate card */}
-          <CustomNegotiateCard />
         </div>
 
-        <p className="text-center text-gray-500 text-sm mt-8">
+        {/* Tailored solution banner */}
+        <NegotiateBanner />
+
+        <p className="text-center text-gray-500 text-sm mt-6">
           Not sure which plan?{" "}
           <a href="https://wa.me/2348023131379" target="_blank" className="text-[#10B981] hover:underline">
             Chat with us on WhatsApp
