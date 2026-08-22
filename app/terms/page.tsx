@@ -10,7 +10,7 @@ export default function TermsOfService() {
         </Link>
 
         <h1 className="text-4xl font-bold text-white mb-2">Terms of Service</h1>
-        <p className="text-gray-400 text-sm mb-10">Last updated: July 2026</p>
+        <p className="text-gray-400 text-sm mb-10">Last updated: August 2026</p>
 
         <div className="space-y-8 text-gray-300 text-sm leading-relaxed">
           <section>
@@ -75,6 +75,11 @@ export default function TermsOfService() {
           <section>
             <h2 className="text-xl font-bold text-white mb-3">9. Acceptable Use Policy</h2>
             <p>Clients agree not to use MarketPilot to: (a) violate the Terms of Service of any connected third-party social media platform; (b) send spam, unsolicited messages, or engage in artificial engagement manipulation (e.g., botting, buying followers); (c) transmit content that is illegal, hateful, or infringes on intellectual property rights. MarketPilot reserves the right to immediately suspend or terminate accounts violating this policy without refund.</p>
+          </section>
+
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">9b. Meta Platform Policy Compliance</h2>
+            <p>MarketPilot operates in compliance with Meta&apos;s Platform Terms and Developer Policies. By connecting your Facebook or Instagram account, you confirm that you are the authorised administrator of those accounts and that your use complies with Meta&apos;s Terms of Service. MarketPilot is not affiliated with, endorsed by, or sponsored by Meta Platforms Inc.</p>
           </section>
 
           <section>

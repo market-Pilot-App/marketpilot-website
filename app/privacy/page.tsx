@@ -10,7 +10,7 @@ export default function PrivacyPolicy() {
         </Link>
 
         <h1 className="text-4xl font-bold text-white mb-2">Privacy Policy</h1>
-        <p className="text-gray-400 text-sm mb-10">Last updated: July 2026</p>
+        <p className="text-gray-400 text-sm mb-10">Last updated: August 2026</p>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-300 text-sm leading-relaxed">
           <section>
@@ -45,8 +45,20 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
+            <h2 className="text-xl font-bold text-white mb-3">4b. Facebook &amp; Instagram Data</h2>
+            <p>When you connect your Facebook Page or Instagram Business account to MarketPilot, we access the following data on your behalf:</p>
+            <ul className="list-disc pl-5 space-y-1 mt-2">
+              <li>Facebook Page name, ID, and access tokens</li>
+              <li>Instagram Business account ID and media</li>
+              <li>Facebook Page messages and comments (for auto-reply feature)</li>
+              <li>Page insights and engagement metrics</li>
+            </ul>
+            <p className="mt-3">This data is used solely to provide the MarketPilot service — automated posting, auto-reply, and analytics. We do not share this data with any third party. You can revoke MarketPilot&apos;s access at any time by visiting <strong>Facebook Settings → Apps and Websites → MarketPilot → Remove</strong>.</p>
+          </section>
+
+          <section>
             <h2 className="text-xl font-bold text-white mb-3">5. Data Security &amp; NDPR Compliance</h2>
-            <p>In compliance with the Nigeria Data Protection Regulation (NDPR) and the Nigeria Data Protection Act 2023 (NDPA), Tradilink Africa Solution Limited collects and processes personal data solely for the purpose of providing and improving the MarketPilot service. We employ industry-standard encryption. We do not sell, rent, or share your data with third parties for marketing purposes. Clients retain the right to request data access, correction, or deletion by contacting <a href="mailto:support@marketpiloting.online" className="text-[#10B981] hover:underline">support@marketpiloting.online</a>.</p>
+            <p>In compliance with the Nigeria Data Protection Regulation (NDPR) and the Nigeria Data Protection Act 2023 (NDPA), Tradilink Africa Solution Limited collects and processes personal data solely for the purpose of providing and improving the MarketPilot service. We employ industry-standard encryption. We do not sell, rent, or share your data with third parties for marketing purposes. Clients retain the right to request data access, correction, or deletion by contacting <a href="mailto:marketpilot2026@gmail.com" className="text-[#10B981] hover:underline">marketpilot2026@gmail.com</a>.</p>
           </section>
 
           <section>
@@ -64,9 +76,10 @@ export default function PrivacyPolicy() {
             <p>We use the following third-party services to operate MarketPilot: Facebook/Meta API, Instagram API, LinkedIn API, Telegram API, Twitter/X API, Resend (email), Twilio (WhatsApp), Groq (AI), Cloudinary (media storage), Neon (database).</p>
           </section>
 
-          <section>
-            <h2 className="text-xl font-bold text-white mb-3">7. Your Rights</h2>
+          <section id="data-deletion">
+            <h2 className="text-xl font-bold text-white mb-3">7. Your Rights &amp; Data Deletion</h2>
             <p>You have the right to access, update, or delete your personal information at any time. To exercise these rights, contact us at the details below.</p>
+            <p className="mt-3">To request deletion of your Facebook or Instagram data specifically, email <a href="mailto:marketpilot2026@gmail.com" className="text-[#10B981] hover:underline">marketpilot2026@gmail.com</a> with the subject line <strong>&quot;Data Deletion Request&quot;</strong>. We will process your request within 30 days and confirm deletion by email.</p>
           </section>
 
           <section>
