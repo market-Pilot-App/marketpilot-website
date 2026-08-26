@@ -21,7 +21,7 @@ export default function ContactPage() {
         {/* Contact Cards */}
         <div className="grid sm:grid-cols-3 gap-4 mb-12">
           <a
-            href="https://wa.me/2348023131379"
+            href="https://wa.me/2349018622185"
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center gap-3 p-6 bg-white/5 border border-white/10 rounded-xl hover:border-[#10B981]/50 hover:bg-white/10 transition-all text-center"
@@ -29,7 +29,7 @@ export default function ContactPage() {
             <span className="text-3xl">💬</span>
             <div>
               <p className="text-white font-semibold text-sm">WhatsApp</p>
-              <p className="text-gray-400 text-xs mt-1">+234 802 313 1379</p>
+              <p className="text-gray-400 text-xs mt-1">+234 901 862 2185</p>
             </div>
           </a>
 
@@ -64,7 +64,7 @@ export default function ContactPage() {
           <p>A product of <span className="text-white">Tradilink Africa Solution Limited</span></p>
           <p className="mt-1">RC: 8949081</p>
           <p className="mt-1">Email: <a href="mailto:support@marketpiloting.com" className="text-[#10B981] hover:underline">support@marketpiloting.com</a></p>
-          <p className="mt-1">WhatsApp: <a href="https://wa.me/2348023131379" className="text-[#10B981] hover:underline">+234 802 313 1379</a></p>
+          <p className="mt-1">WhatsApp: <a href="https://wa.me/2349018622185" className="text-[#10B981] hover:underline">+234 901 862 2185</a></p>
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10">
