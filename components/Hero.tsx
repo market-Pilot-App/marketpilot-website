@@ -83,13 +83,19 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
-          <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
+          <a href="https://dashboard.marketpiloting.com/register"
             className="w-full sm:w-auto px-8 py-4 bg-[#10B981] hover:bg-[#059669] text-white font-bold text-lg rounded-xl transition-all shadow-lg shadow-[#10B981]/25 hover:shadow-[#10B981]/40 hover:scale-105">
-            📅 Book a Free Demo
+            🚀 Get Started Now
           </a>
-          <a href="https://wa.me/2348023131379" target="_blank"
+          <a href="https://wa.me/2349018622185" target="_blank"
             className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-lg rounded-xl transition-all">
             💬 Chat on WhatsApp
+          </a>
+        </div>
+        <div className="flex items-center justify-center mb-10">
+          <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
+            className="text-xs text-gray-500 hover:text-gray-300 transition-colors underline underline-offset-2">
+            📅 Prefer a demo first? Book a free 30-min call
           </a>
         </div>
 

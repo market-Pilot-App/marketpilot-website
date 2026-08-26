@@ -13,19 +13,21 @@ export default function CTABanner() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4F46E5] to-[#10B981]"> on autopilot?</span>
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto mb-10">
-              Start with a free 30-minute demo call. We’ll show you exactly how MarketPilot works for your business and get your account set up.
+              Join hundreds of businesses already growing on autopilot. Pick a plan and get started in minutes — no demo needed.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
+              <a href="https://dashboard.marketpiloting.com/register"
                 className="w-full sm:w-auto px-8 py-4 bg-[#10B981] hover:bg-[#059669] text-white font-bold text-lg rounded-xl transition-all shadow-lg shadow-[#10B981]/25 hover:scale-105">
-                📅 Book a Free Demo
+                🚀 Get Started Now
               </a>
-              <a href="https://wa.me/2348023131379" target="_blank"
+              <a href="https://wa.me/2349018622185" target="_blank"
                 className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-lg rounded-xl transition-all">
                 💬 WhatsApp Us Now
               </a>
             </div>
-            <p className="text-gray-500 text-xs mt-6">No payment required for the demo. No commitment.</p>
+            <p className="text-gray-500 text-xs mt-6">
+              Not ready yet? <a href="https://calendly.com/marketpilot2026/30min" target="_blank" className="underline hover:text-gray-300">Book a free demo call</a> instead.
+            </p>
           </div>
         </div>
       </div>

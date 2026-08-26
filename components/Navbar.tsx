@@ -28,17 +28,17 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a href="https://wa.me/2348023131379" target="_blank"
-              className="text-sm text-gray-400 hover:text-white transition-colors">
+            <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
+              className="text-xs text-gray-500 hover:text-gray-300 transition-colors">
+              📅 Book a Demo
+            </a>
+            <a href="https://wa.me/2349018622185" target="_blank"
+              className="px-4 py-2 bg-[#10B981] hover:bg-[#059669] text-white text-sm font-semibold rounded-lg transition-colors">
               💬 WhatsApp
             </a>
             <a href="https://dashboard.marketpiloting.com/login"
-              className="text-sm text-gray-400 hover:text-white transition-colors">
+              className="px-4 py-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-semibold rounded-lg transition-colors">
               Login
-            </a>
-            <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
-              className="px-4 py-2 bg-[#10B981] hover:bg-[#059669] text-white text-sm font-semibold rounded-lg transition-colors">
-              Book a Free Demo
             </a>
           </div>
 
@@ -59,13 +59,17 @@ export default function Navbar() {
             </a>
           ))}
           <a href="/contact" onClick={() => setOpen(false)} className="block text-sm text-gray-400 hover:text-white py-2">Contact</a>
+          <a href="https://wa.me/2349018622185" target="_blank" onClick={() => setOpen(false)}
+            className="block w-full text-center px-4 py-2.5 bg-[#10B981] text-white text-sm font-semibold rounded-lg">
+            💬 WhatsApp
+          </a>
           <a href="https://dashboard.marketpiloting.com/login"
-            className="block text-sm text-gray-400 hover:text-white py-2">
+            className="block w-full text-center px-4 py-2.5 bg-white/10 border border-white/20 text-white text-sm font-semibold rounded-lg">
             Login to Dashboard
           </a>
           <a href="https://calendly.com/marketpilot2026/30min" target="_blank"
-            className="block w-full text-center px-4 py-2.5 bg-[#10B981] text-white text-sm font-semibold rounded-lg">
-            Book a Free Demo
+            className="block text-center text-xs text-gray-500 hover:text-gray-300 py-2">
+            📅 Book a Demo
           </a>
         </div>
       )}
