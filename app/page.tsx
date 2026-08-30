@@ -29,8 +29,8 @@ export default function Home() {
             offers: {
               "@type": "AggregateOffer",
               priceCurrency: "NGN",
-              lowPrice: "29999",
-              highPrice: "450000",
+              lowPrice: "5999",
+              highPrice: "550000",
             },
             provider: {
               "@type": "Organization",
