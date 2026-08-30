@@ -27,9 +27,10 @@ const features = [
   },
   {
     icon: "🌐",
-    title: "AI Landing Page Builder",
-    description: "No website? We build you one in seconds using AI. Your branded landing page goes live instantly at your own MarketPilot link — ready to capture leads.",
+    title: "AI Website Builder",
+    description: "No website? AI generates your full multi-page website in under 60 seconds — Home, About, Services, Contact, FAQ, Blog. Published instantly at your own link. Custom domain on Pro/Agency. Edit every section, swap themes, upload your logo. Leads flow straight to your CRM.",
     color: "from-[#10B981] to-[#4F46E5]",
+    badge: "✨ New",
   },
   {
     icon: "📊",

@@ -3,6 +3,14 @@ import { useState } from "react";
 
 const faqs = [
   {
+    q: "Do I get a real website or just a landing page?",
+    a: "From Solo plan upwards, you get a full AI-generated multi-page website — Home, About, Services, Contact, FAQ, and Blog pages — published instantly at your own link (e.g. dashboard.marketpiloting.com/sites/yourbrand). Pro and Agency plans include a custom domain so it shows as www.yourbusiness.com. The Micro plan includes a single AI landing page. Every section is editable from your dashboard, and you can revert to the original AI version at any time.",
+  },
+  {
+    q: "What happens to my website if I cancel or my plan expires?",
+    a: "Your website stays live — your customers can still visit it and submit leads. We never take your site offline. However, editing your website (content, theme, domain, SEO) is locked until you renew. This means your online presence is always protected, but you need an active plan to make changes.",
+  },
+  {
     q: "Is my social media account safe?",
     a: "Yes. We use official API access tokens — the same method used by major social media management tools. We never store your passwords. You can revoke access at any time from your social media settings.",
   },

@@ -14,6 +14,7 @@ const plans = [
       "📅 2 posts/day — 60 posts/month",
       "🤖 AI content generation (Brand DNA)",
       "🚀 AI-Optimized Organic Reach (likes + views)",
+      "📄 1 AI landing page",
       "📊 Analytics dashboard",
       "📧 Weekly email report",
       "First post live within 72hrs",
@@ -24,9 +25,9 @@ const plans = [
   },
   {
     name: "Solo",
-    monthlyNaira: 15000,
-    monthlyUSD: 9,
-    description: "For solo entrepreneurs and micro-businesses taking their first step into automated marketing.",
+    monthlyNaira: 19500,
+    monthlyUSD: 12,
+    description: "For solo entrepreneurs and micro-businesses ready for a real online presence — website included.",
     features: [
       "2 platforms (Facebook + X/Twitter)",
       "*X/Twitter: requires optional Twitter API ($100/mo from developer.x.com) — without it, captions saved to Content Library",
@@ -35,7 +36,7 @@ const plans = [
       "🚀 AI-Optimized Organic Reach (likes + views)",
       "🎬 4 video posts/month",
       "📰 1 blog post/week",
-      "🌐 1 AI landing page",
+      "🌐 1 AI-generated website (multi-page)",
       "💡 3 news hijacks/week",
       "📊 Analytics dashboard",
       "📧 Weekly email report",
@@ -47,9 +48,9 @@ const plans = [
   },
   {
     name: "Starter",
-    monthlyNaira: 35000,
-    monthlyUSD: 22,
-    description: "For small businesses ready to build a consistent presence across multiple platforms.",
+    monthlyNaira: 42900,
+    monthlyUSD: 27,
+    description: "For small businesses ready to build a consistent presence across multiple platforms — with a full website.",
     features: [
       "6 platforms (Facebook, X/Twitter, Instagram, Telegram, TikTok, Blog)",
       "📅 5 posts/day — 150 posts/month",
@@ -59,7 +60,7 @@ const plans = [
       "🎬 8 video posts/month",
       "▶️ YouTube: 1 video/week + views boost",
       "📰 2 blog posts/week",
-      "🌐 1 AI landing page",
+      "🌐 1 AI-generated website (multi-page)",
       "💡 5 news hijacks/week",
       "📊 Analytics dashboard",
       "📧 Weekly email report",
@@ -71,9 +72,9 @@ const plans = [
   },
   {
     name: "Growth",
-    monthlyNaira: 75000,
-    monthlyUSD: 47,
-    description: "For growing brands that want full multi-platform automation and aggressive audience growth.",
+    monthlyNaira: 95000,
+    monthlyUSD: 59,
+    description: "For growing brands that want full multi-platform automation, aggressive audience growth, and up to 3 websites.",
     features: [
       "7 platforms (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog)",
       "*TikTok: AI content + organic boost only",
@@ -85,7 +86,7 @@ const plans = [
       "🎬 20 video posts/month",
       "▶️ YouTube: 3 videos/week + views & subscriber boost",
       "📰 3 blog posts/week",
-      "🌐 Unlimited AI landing pages",
+      "🌐 Up to 3 AI-generated websites (multi-page)",
       "💡 Daily news hijacking",
       "🔍 Competitor monitoring (3 competitors)",
       "👥 Full CRM + lead capture",
@@ -99,9 +100,9 @@ const plans = [
   },
   {
     name: "Pro",
-    monthlyNaira: 185000,
-    monthlyUSD: 116,
-    description: "For serious single-brand businesses that want agency-level power without managing multiple accounts.",
+    monthlyNaira: 200000,
+    monthlyUSD: 125,
+    description: "For serious single-brand businesses that want agency-level power — unlimited websites with custom domains.",
     features: [
       "1 brand — full agency-level automation",
       "9 platforms (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog, YouTube, Website)",
@@ -113,7 +114,8 @@ const plans = [
       "👥 Followers/subscribers boost (all platforms)",
       "🎬 Unlimited video posts",
       "📰 Daily blog posts",
-      "🌐 Unlimited AI landing pages",
+      "🌐 Unlimited AI-generated websites (multi-page)",
+      "🔗 Custom domain per website",
       "💡 News hijacking every 4 hours",
       "🔍 Unlimited competitor monitoring",
       "👥 Full CRM + AI broadcast",
@@ -128,9 +130,9 @@ const plans = [
   },
   {
     name: "Agency",
-    monthlyNaira: 495000,
-    monthlyUSD: 309,
-    description: "For marketing agencies and multi-brand businesses. Manage up to 11 brands under one account.",
+    monthlyNaira: 550000,
+    monthlyUSD: 344,
+    description: "For marketing agencies and multi-brand businesses. Manage up to 11 brands — each with unlimited websites.",
     features: [
       "11 brands/sub-campaigns under 1 account",
       "9 platforms per brand (Facebook, X/Twitter, Instagram, LinkedIn, Telegram, TikTok, Blog, YouTube, Website)",
@@ -142,7 +144,8 @@ const plans = [
       "👥 Followers/subscribers boost (all platforms)",
       "🎬 Unlimited video posts",
       "📰 Daily blog posts per brand",
-      "🌐 Unlimited AI landing pages",
+      "🌐 Unlimited AI-generated websites per brand",
+      "🔗 Custom domain per website",
       "💡 News hijacking every 4 hours",
       "🔍 Unlimited competitor monitoring",
       "👥 Full CRM + AI broadcast",
@@ -335,9 +338,10 @@ export default function Pricing() {
                 "Content writer: ₦80,000/month",
                 "Graphic designer: ₦70,000/month",
                 "Blog writer: ₦50,000/month",
+                "Web designer (website updates): ₦60,000/month",
                 "They still need your time to approve content",
                 "They take sick days, public holidays, and breaks",
-                "Total: ₦300,000+/month — and you're still managing them",
+                "Total: ₦360,000+/month — and you're still managing them",
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
                   <span className="text-red-400 mt-0.5 flex-shrink-0">✗</span>
@@ -349,11 +353,12 @@ export default function Pricing() {
 
           <div className="p-8 bg-[#4F46E5]/10 border border-[#4F46E5]/40 rounded-2xl">
             <p className="text-[#10B981] text-xs font-semibold uppercase tracking-widest mb-3">MarketPilot Growth Plan</p>
-            <h3 className="text-xl font-bold text-white mb-4">₦75,000/month — full AI marketing engine</h3>
+            <h3 className="text-xl font-bold text-white mb-4">₦95,000/month — full AI marketing engine</h3>
             <ul className="space-y-3">
               {[
                 "8 posts/day across 6 platforms — 240 posts/month",
                 "AI generates every post using your Brand DNA",
+                "AI builds up to 3 full multi-page websites — live in 60 seconds",
                 "AI-optimized scheduling maximizes organic reach across all platforms",
                 "Writes and publishes 3 blog posts/week",
                 "Captures leads and manages your CRM automatically",

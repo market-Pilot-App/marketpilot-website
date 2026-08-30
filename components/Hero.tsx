@@ -20,6 +20,12 @@ const headlines = [
     line2: "We Post, Engage, and Capture Leads",
     highlight2: "While You Sleep.",
   },
+  {
+    line1: "Your Website. Your Social Media.",
+    highlight1: "",
+    line2: "All Built by AI.",
+    highlight2: "In Under 60 Seconds.",
+  },
 ];
 
 export default function Hero() {
@@ -77,7 +83,7 @@ export default function Hero() {
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
           Most businesses lose customers every day — not because their product is bad, but because they&apos;re invisible online.
-          MarketPilot fixes that. AI content written for your brand, posted daily across 9 platforms, audience boosted, leads captured — and a weekly report in your inbox.
+          MarketPilot fixes that. AI builds your website, writes content for your brand, posts daily across 9 platforms, boosts your audience, captures leads — and sends a weekly report to your inbox.
           <span className="text-white font-medium"> No agency. No hiring. No stress. Just growth — on autopilot.</span>
         </p>
 
@@ -110,6 +116,7 @@ export default function Hero() {
             { icon: "🐦", name: "X/Twitter" },
             { icon: "🎵", name: "TikTok" },
             { icon: "▶️", name: "YouTube" },
+            { icon: "🌐", name: "Website" },
           ].map((p) => (
             <span key={p.name} className="flex items-center gap-1.5 px-3 py-1.5 bg-white/5 border border-white/10 rounded-full text-xs text-gray-400">
               {p.icon} {p.name}
