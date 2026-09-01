@@ -7,6 +7,7 @@ import WhoIsItFor from "@/components/WhoIsItFor";
 import Pricing from "@/components/Pricing";
 import Guarantee from "@/components/Guarantee";
 import Testimonial from "@/components/Testimonial";
+import Affiliate from "@/components/Affiliate";
 import FAQ from "@/components/FAQ";
 import LeadMagnet from "@/components/LeadMagnet";
 import CTABanner from "@/components/CTABanner";
@@ -49,6 +50,7 @@ export default function Home() {
       <Pricing />
       <Guarantee />
       <Testimonial />
+      <Affiliate />
       <FAQ />
       <LeadMagnet />
       <CTABanner />

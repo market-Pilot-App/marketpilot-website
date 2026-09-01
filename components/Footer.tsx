@@ -35,9 +35,21 @@ export default function Footer() {
                 { label: "Contact", href: "/contact" },
                 { label: "FAQ", href: "#faq" },
                 { label: "Book a Demo", href: "https://calendly.com/marketpilot2026/30min" },
+                { label: "💸 Affiliate Programme", href: "https://affiliates.marketpiloting.com/" },
               ].map((l) => (
                 <li key={l.label}>
-                  <a href={l.href} className="text-gray-400 hover:text-white text-sm transition-colors">{l.label}</a>
+                  <a
+                    href={l.href}
+                    target={l.href.startsWith("http") ? "_blank" : undefined}
+                    rel={l.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className={`text-sm transition-colors ${
+                      l.label.includes("Affiliate")
+                        ? "text-[#F97316] hover:text-[#EA6C0A] font-bold"
+                        : "text-gray-400 hover:text-white"
+                    }`}
+                  >
+                    {l.label}
+                  </a>
                 </li>
               ))}
             </ul>

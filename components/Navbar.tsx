@@ -24,6 +24,14 @@ export default function Navbar() {
               </a>
             ))}
             <a href="/contact" className="text-sm text-gray-400 hover:text-white transition-colors">Contact</a>
+            <a
+              href="https://affiliates.marketpiloting.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-bold text-[#F97316] hover:text-[#EA6C0A] transition-colors"
+            >
+              💸 Affiliate
+            </a>
           </div>
 
           {/* CTA */}
@@ -59,6 +67,15 @@ export default function Navbar() {
             </a>
           ))}
           <a href="/contact" onClick={() => setOpen(false)} className="block text-sm text-gray-400 hover:text-white py-2">Contact</a>
+          <a
+            href="https://affiliates.marketpiloting.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="block text-sm font-bold text-[#F97316] hover:text-[#EA6C0A] py-2"
+          >
+            💸 Affiliate Programme
+          </a>
           <a href="https://wa.me/2349018622185" target="_blank" onClick={() => setOpen(false)}
             className="block w-full text-center px-4 py-2.5 bg-[#10B981] text-white text-sm font-semibold rounded-lg">
             💬 WhatsApp
