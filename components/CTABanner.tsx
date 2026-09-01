@@ -24,6 +24,13 @@ export default function CTABanner() {
                 className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-lg rounded-xl transition-all">
                 💬 WhatsApp Us Now
               </a>
+              <a
+                href="https://affiliates.marketpiloting.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#F97316] to-[#EA6C0A] hover:from-[#EA6C0A] hover:to-[#D45F00] text-white font-black text-lg rounded-xl transition-all shadow-lg shadow-[#F97316]/30 hover:scale-105">
+                💸 Join Affiliate
+              </a>
             </div>
             <p className="text-gray-500 text-xs mt-6">
               Not ready yet? <a href="https://calendly.com/marketpilot2026/30min" target="_blank" className="underline hover:text-gray-300">Book a free demo call</a> instead.
