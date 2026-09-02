@@ -57,7 +57,7 @@ export default function Affiliate() {
         {/* Perks strip */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14">
           {[
-            { icon: "♾️", label: "Lifetime commissions" },
+            { icon: "♾️", label: "Recurring commissions" },
             { icon: "⚡", label: "Instant dashboard access" },
             { icon: "🌍", label: "Open to anyone, anywhere" },
             { icon: "🆓", label: "100% free to join" },
@@ -104,6 +104,14 @@ export default function Affiliate() {
               >
                 Log in to your dashboard →
               </a>
+            </p>
+
+            <p className="text-gray-600 text-xs mt-6 max-w-md mx-auto leading-relaxed">
+              Commissions are paid on confirmed, non-refunded subscriptions only. Earnings are not guaranteed.
+              Programme terms may be updated with 14 days&apos; notice. Affiliates are responsible for their own tax obligations.
+              See our{" "}
+              <a href="/terms#affiliate" className="text-gray-500 hover:text-gray-400 underline">Affiliate Terms</a>{" "}
+              for full details.
             </p>
           </div>
         </div>

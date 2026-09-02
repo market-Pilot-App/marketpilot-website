@@ -92,13 +92,28 @@ export default function TermsOfService() {
             <p>MarketPilot and all related technology is the intellectual property of Tradilink Africa Solution Limited. You retain ownership of your brand content and social media accounts.</p>
           </section>
 
+          <section id="affiliate">
+            <h2 className="text-xl font-bold text-white mb-3">12. Affiliate Programme</h2>
+            <p className="mb-3">MarketPilot operates a voluntary affiliate referral programme. By joining the programme, you agree to the following:</p>
+            <ul className="list-disc pl-5 space-y-1">
+              <li><strong>No cost to join.</strong> Participation is free. We will never charge affiliates any fee to join, remain in, or earn from the programme.</li>
+              <li><strong>Commission basis only.</strong> Affiliates earn a commission solely on subscriptions that are successfully paid and not subsequently refunded. No commission is owed on free trials, cancelled orders, or chargebacks.</li>
+              <li><strong>Our liability is capped at actual earnings.</strong> Tradilink Africa Solution Limited&apos;s total financial obligation to any affiliate shall never exceed the commission actually earned and confirmed on that affiliate&apos;s dashboard. We are not liable for any indirect, speculative, or projected earnings.</li>
+              <li><strong>No guaranteed income.</strong> Participation in the affiliate programme does not guarantee any level of earnings. Commission rates, programme terms, and eligibility criteria may be updated with 14 days&apos; notice.</li>
+              <li><strong>Programme modification or termination.</strong> We reserve the right to modify commission rates, pause, or terminate the affiliate programme at any time. Affiliates will be notified via email. Any commissions already confirmed and due at the time of termination will be honoured.</li>
+              <li><strong>Affiliate conduct.</strong> Affiliates must not make false or misleading claims about MarketPilot, engage in spam, or use paid advertising that impersonates MarketPilot without prior written consent. Violation results in immediate removal and forfeiture of unpaid commissions.</li>
+              <li><strong>Tax responsibility.</strong> Affiliates are solely responsible for declaring and paying any taxes applicable to their commission earnings under the laws of their jurisdiction. MarketPilot does not withhold tax on behalf of affiliates.</li>
+              <li><strong>Fraud prevention.</strong> Self-referrals, fake accounts, or any attempt to fraudulently generate commissions will result in permanent account termination and forfeiture of all pending commissions.</li>
+            </ul>
+          </section>
+
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">12. Governing Law</h2>
+            <h2 className="text-xl font-bold text-white mb-3">13. Governing Law</h2>
             <p>These terms are governed by the laws of the Federal Republic of Nigeria. Any disputes shall be resolved in Nigerian courts.</p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-white mb-3">13. Contact</h2>
+            <h2 className="text-xl font-bold text-white mb-3">14. Contact</h2>
             <p>Tradilink Africa Solution Limited<br />RC: 8949081<br />WhatsApp: +2348023131379<br />Email: marketpilot2026@gmail.com</p>
           </section>
         </div>

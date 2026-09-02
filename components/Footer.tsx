@@ -62,6 +62,7 @@ export default function Footer() {
               {[
                 { label: "Privacy Policy", href: "/privacy" },
                 { label: "Terms of Service", href: "/terms" },
+                { label: "Affiliate Terms", href: "/terms#affiliate" },
               ].map((l) => (
                 <li key={l.label}>
                   <Link href={l.href} className="text-gray-400 hover:text-white text-sm transition-colors">{l.label}</Link>

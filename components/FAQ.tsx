@@ -31,6 +31,10 @@ const faqs = [
     a: "We post organically to Facebook, Instagram, LinkedIn, Telegram and X/Twitter. YouTube is supported via our Video Queue — upload a video and it auto-posts to your YouTube channel at the scheduled time (Starter plan and above). X/Twitter full auto-posting requires an optional Twitter API account ($100/month from developer.x.com) — without it, AI-generated captions are saved to your Content Library for manual posting. TikTok is supported for AI content generation and audience boosting (likes, views, followers) via our SMM system. Blog auto-publishing is also included on Growth and Agency plans.",
   },
   {
+    q: "How does the Affiliate Programme work?",
+    a: "The affiliate programme is completely free to join. You get a unique referral link — share it with businesses that need automated marketing. When someone subscribes through your link and their payment is confirmed, you earn a recurring commission for every month they stay subscribed. Commissions are paid on confirmed, non-refunded subscriptions only. Earnings are not guaranteed and depend entirely on your referrals. You are responsible for any taxes on your earnings. Programme terms may be updated with 14 days' notice. See our Terms of Service for full affiliate terms.",
+  },
+  {
     q: "Will the content sound like my brand?",
     a: "Yes. During setup our Brand DNA Engine analyses your business and extracts your tone of voice, target audience, key messages and words to always use or avoid. Every post, blog and email is then generated through this Brand DNA layer — so the content sounds like you, not a generic AI.",
   },

@@ -76,6 +76,17 @@ export default function PrivacyPolicy() {
             <p>We use the following third-party services to operate MarketPilot: Facebook/Meta API, Instagram API, LinkedIn API, Telegram API, Twitter/X API, Resend (email), Twilio (WhatsApp), Groq (AI), Cloudinary (media storage), Neon (database).</p>
           </section>
 
+          <section>
+            <h2 className="text-xl font-bold text-white mb-3">6b. Affiliate Programme Data</h2>
+            <p>If you participate in the MarketPilot Affiliate Programme, we collect and process the following additional data:</p>
+            <ul className="list-disc pl-5 space-y-1 mt-2">
+              <li>Your name and email address (used to create and manage your affiliate account)</li>
+              <li>Your unique referral link click and conversion data (to calculate commissions accurately)</li>
+              <li>Payment details you provide for commission payouts (e.g. bank account or mobile money number)</li>
+            </ul>
+            <p className="mt-3">This data is used solely to operate the affiliate programme — tracking referrals, calculating commissions, and processing payouts. We do not share affiliate payout details with any third party. You may request deletion of your affiliate account and associated data at any time by emailing <a href="mailto:marketpilot2026@gmail.com" className="text-[#10B981] hover:underline">marketpilot2026@gmail.com</a>. Note that transaction records may be retained for up to 7 years as required by Nigerian financial regulations.</p>
+          </section>
+
           <section id="data-deletion">
             <h2 className="text-xl font-bold text-white mb-3">7. Your Rights &amp; Data Deletion</h2>
             <p>You have the right to access, update, or delete your personal information at any time. To exercise these rights, contact us at the details below.</p>
