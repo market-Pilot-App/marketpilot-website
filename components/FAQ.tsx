@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     q: "How does the Affiliate Programme work?",
-    a: "The affiliate programme is completely free to join. You get a unique referral link — share it with businesses that need automated marketing. When someone subscribes through your link and their payment is confirmed, you earn a recurring commission for every month they stay subscribed. Commissions are paid on confirmed, non-refunded subscriptions only. Earnings are not guaranteed and depend entirely on your referrals. You are responsible for any taxes on your earnings. Programme terms may be updated with 14 days' notice. See our Terms of Service for full affiliate terms.",
+    a: "The affiliate programme is completely free to join. You get a unique referral link — share it with businesses that need automated marketing. When someone subscribes through your link and their first payment is confirmed, you earn a 10% commission on that first payment. Commission is on the first payment only — not on renewals. The more businesses you refer, the more you earn. Commissions are paid on confirmed, non-refunded payments only. Earnings are not guaranteed and depend entirely on your referrals. You are responsible for any taxes on your earnings. See our Terms of Service for full affiliate terms.",
   },
   {
     q: "Will the content sound like my brand?",

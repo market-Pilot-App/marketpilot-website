@@ -9,12 +9,12 @@ export default function Affiliate() {
           <h2 className="text-3xl sm:text-5xl font-bold text-white mt-3 mb-4">
             Turn referrals into{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F97316] to-[#4F46E5]">
-              recurring income
+              real cash
             </span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto text-base leading-relaxed">
-            Know a business that needs consistent marketing? Refer them to MarketPilot and earn a commission
-            every single month they stay — for as long as they're a customer.
+            Know a business that needs consistent marketing? Refer them to MarketPilot and earn a 10% commission
+            on their first payment — every time someone signs up through your link.
           </p>
         </div>
 
@@ -36,8 +36,8 @@ export default function Affiliate() {
             {
               step: "03",
               icon: "💰",
-              title: "Earn every month",
-              desc: "Earn a commission for every paying customer you refer — recurring, month after month, for the lifetime of their subscription.",
+              title: "Earn on every signup",
+              desc: "Earn 10% commission on the first payment of every customer you refer. The more businesses you refer, the more you earn.",
             },
           ].map((item) => (
             <div
@@ -57,7 +57,7 @@ export default function Affiliate() {
         {/* Perks strip */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-14">
           {[
-            { icon: "♾️", label: "Recurring commissions" },
+            { icon: "💸", label: "10% per first payment" },
             { icon: "⚡", label: "Instant dashboard access" },
             { icon: "🌍", label: "Open to anyone, anywhere" },
             { icon: "🆓", label: "100% free to join" },
