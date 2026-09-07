@@ -1,4 +1,19 @@
-export const posts = [
+import fs from "fs";
+import path from "path";
+
+export type Post = {
+  slug: string;
+  title: string;
+  excerpt: string;
+  category: string;
+  date: string;
+  readTime: string;
+  image: string;
+  body?: string;
+  tags?: string[];
+};
+
+const staticPosts: Post[] = [
   {
     slug: "why-african-businesses-need-social-media-automation",
     title: "Why African Businesses Need Social Media Automation in 2025",
@@ -54,3 +69,23 @@ export const posts = [
     image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=800&q=80",
   },
 ];
+
+function loadDynamicPosts(): Post[] {
+  try {
+    const filePath = path.join(process.cwd(), "public", "blog-posts.json");
+    const raw = fs.readFileSync(filePath, "utf-8");
+    return JSON.parse(raw) as Post[];
+  } catch {
+    return [];
+  }
+}
+
+const dynamicPosts = loadDynamicPosts();
+
+// Dynamic posts first (newest), then static — deduplicate by slug
+const seen = new Set<string>();
+export const posts: Post[] = [...dynamicPosts, ...staticPosts].filter((p) => {
+  if (seen.has(p.slug)) return false;
+  seen.add(p.slug);
+  return true;
+});

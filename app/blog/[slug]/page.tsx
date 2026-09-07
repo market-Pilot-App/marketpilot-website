@@ -63,6 +63,60 @@ const postContent: Record<string, { intro: string; sections: { heading: string; 
   },
 };
 
+/** Render markdown body from AI-generated posts as plain paragraphs/headings */
+function MarkdownBody({ body }: { body: string }) {
+  const lines = body.split("\n");
+  let ctaInserted = false;
+  const elements: React.ReactNode[] = [];
+
+  lines.forEach((line, i) => {
+    const trimmed = line.trim();
+    if (!trimmed) return;
+
+    if (trimmed.startsWith("## ")) {
+      elements.push(
+        <h2 key={i} className="text-xl font-bold text-white mt-8 mb-3">
+          {trimmed.replace(/^## /, "")}
+        </h2>
+      );
+    } else if (trimmed.startsWith("# ")) {
+      elements.push(
+        <h2 key={i} className="text-2xl font-bold text-white mt-8 mb-3">
+          {trimmed.replace(/^# /, "")}
+        </h2>
+      );
+    } else if (trimmed.startsWith("- ") || trimmed.startsWith("* ")) {
+      elements.push(
+        <li key={i} className="text-gray-400 leading-relaxed ml-4 list-disc">
+          {trimmed.replace(/^[-*] /, "")}
+        </li>
+      );
+    } else {
+      // Insert internal CTA after 2nd paragraph
+      if (!ctaInserted && elements.filter((e: any) => e?.type === "p").length === 1) {
+        ctaInserted = true;
+        elements.push(
+          <div key="cta" className="my-6 p-5 bg-[#4F46E5]/10 border border-[#4F46E5]/30 rounded-xl not-prose">
+            <p className="text-white text-sm font-semibold mb-1">Want this handled automatically?</p>
+            <p className="text-gray-400 text-xs mb-3">MarketPilot automates your entire social media presence — content, posting, boosting, and reporting.</p>
+            <div className="flex gap-4">
+              <a href="/#pricing" className="text-[#10B981] text-sm font-bold hover:underline">View pricing plans →</a>
+              <a href="/#features" className="text-[#818CF8] text-sm font-bold hover:underline">See all features →</a>
+            </div>
+          </div>
+        );
+      }
+      elements.push(
+        <p key={i} className="text-gray-400 leading-relaxed mb-4">
+          {trimmed.replace(/\*\*(.*?)\*\*/g, "$1")}
+        </p>
+      );
+    }
+  });
+
+  return <>{elements}</>;
+}
+
 type Props = { params: { slug: string } };
 
 export async function generateStaticParams() {
@@ -92,7 +146,7 @@ export default function BlogPost({ params }: Props) {
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
-  const content = postContent[post.slug];
+  const staticContent = postContent[post.slug];
   const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
 
   const jsonLd = {
@@ -140,26 +194,31 @@ export default function BlogPost({ params }: Props) {
             <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/70 to-transparent" />
           </div>
 
-          {/* Content */}
+          {/* Content — static structured or dynamic markdown */}
           <article className="prose prose-invert prose-lg max-w-none">
-            <p className="text-gray-300 text-lg leading-relaxed mb-8">{content.intro}</p>
-            {content.sections.map((s, i) => (
-              <div key={i} className="mb-8">
-                <h2 className="text-xl font-bold text-white mb-3">{s.heading}</h2>
-                <p className="text-gray-400 leading-relaxed">{s.body}</p>
-                {/* Internal CTA after 2nd section — passes link equity to pricing page */}
-                {i === 1 && (
-                  <div className="my-6 p-5 bg-[#4F46E5]/10 border border-[#4F46E5]/30 rounded-xl not-prose">
-                    <p className="text-white text-sm font-semibold mb-1">Want this handled automatically?</p>
-                    <p className="text-gray-400 text-xs mb-3">MarketPilot automates your entire social media presence — content, posting, boosting, and reporting.</p>
-                    <div className="flex gap-4">
-                      <a href="/#pricing" className="text-[#10B981] text-sm font-bold hover:underline">View pricing plans →</a>
-                      <a href="/#features" className="text-[#818CF8] text-sm font-bold hover:underline">See all features →</a>
-                    </div>
+            {staticContent ? (
+              <>
+                <p className="text-gray-300 text-lg leading-relaxed mb-8">{staticContent.intro}</p>
+                {staticContent.sections.map((s, i) => (
+                  <div key={i} className="mb-8">
+                    <h2 className="text-xl font-bold text-white mb-3">{s.heading}</h2>
+                    <p className="text-gray-400 leading-relaxed">{s.body}</p>
+                    {i === 1 && (
+                      <div className="my-6 p-5 bg-[#4F46E5]/10 border border-[#4F46E5]/30 rounded-xl not-prose">
+                        <p className="text-white text-sm font-semibold mb-1">Want this handled automatically?</p>
+                        <p className="text-gray-400 text-xs mb-3">MarketPilot automates your entire social media presence — content, posting, boosting, and reporting.</p>
+                        <div className="flex gap-4">
+                          <a href="/#pricing" className="text-[#10B981] text-sm font-bold hover:underline">View pricing plans →</a>
+                          <a href="/#features" className="text-[#818CF8] text-sm font-bold hover:underline">See all features →</a>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
-              </div>
-            ))}
+                ))}
+              </>
+            ) : (
+              <MarkdownBody body={post.body ?? ""} />
+            )}
           </article>
 
           {/* CTA */}
