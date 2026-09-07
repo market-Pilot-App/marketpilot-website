@@ -79,12 +79,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      url: `https://marketpiloting.online/blog/${post.slug}`,
+      url: `https://www.marketpiloting.com/blog/${post.slug}`,
       siteName: "MarketPilot",
       type: "article",
       publishedTime: post.date,
     },
-    alternates: { canonical: `https://marketpiloting.online/blog/${post.slug}` },
+    alternates: { canonical: `https://www.marketpiloting.com/blog/${post.slug}` },
   };
 }
 
@@ -102,8 +102,8 @@ export default function BlogPost({ params }: Props) {
     description: post.excerpt,
     datePublished: post.date,
     author: { "@type": "Organization", name: "MarketPilot" },
-    publisher: { "@type": "Organization", name: "MarketPilot", url: "https://marketpiloting.online" },
-    url: `https://marketpiloting.online/blog/${post.slug}`,
+    publisher: { "@type": "Organization", name: "MarketPilot", url: "https://www.marketpiloting.com" },
+    url: `https://www.marketpiloting.com/blog/${post.slug}`,
   };
 
   return (
@@ -147,6 +147,17 @@ export default function BlogPost({ params }: Props) {
               <div key={i} className="mb-8">
                 <h2 className="text-xl font-bold text-white mb-3">{s.heading}</h2>
                 <p className="text-gray-400 leading-relaxed">{s.body}</p>
+                {/* Internal CTA after 2nd section — passes link equity to pricing page */}
+                {i === 1 && (
+                  <div className="my-6 p-5 bg-[#4F46E5]/10 border border-[#4F46E5]/30 rounded-xl not-prose">
+                    <p className="text-white text-sm font-semibold mb-1">Want this handled automatically?</p>
+                    <p className="text-gray-400 text-xs mb-3">MarketPilot automates your entire social media presence — content, posting, boosting, and reporting.</p>
+                    <div className="flex gap-4">
+                      <a href="/#pricing" className="text-[#10B981] text-sm font-bold hover:underline">View pricing plans →</a>
+                      <a href="/#features" className="text-[#818CF8] text-sm font-bold hover:underline">See all features →</a>
+                    </div>
+                  </div>
+                )}
               </div>
             ))}
           </article>

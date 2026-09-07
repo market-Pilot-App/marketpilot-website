@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy — MarketPilot",
+  description: "MarketPilot's privacy policy. Learn how we collect, use, and protect your data in compliance with the Nigeria Data Protection Regulation (NDPR) and NDPA 2023.",
+  alternates: { canonical: "/privacy" },
+};
 
 export default function PrivacyPolicy() {
   return (

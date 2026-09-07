@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { posts } from "./blog/posts-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -32,5 +33,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.3,
     },
+    ...posts.map((post) => ({
+      url: `https://www.marketpiloting.com/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
+    { url: "https://www.marketpiloting.com/social-media-automation", lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: "https://www.marketpiloting.com/ai-website-builder", lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: "https://www.marketpiloting.com/brand-dna-engine", lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: "https://www.marketpiloting.com/whatsapp-marketing", lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: "https://www.marketpiloting.com/lead-generation", lastModified: new Date(), changeFrequency: "monthly" as const, priority: 0.8 },
   ];
 }

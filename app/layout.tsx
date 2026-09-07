@@ -14,14 +14,19 @@ export const metadata: Metadata = {
     description: "Africa's first autonomous marketing engine. AI content, auto-posting, audience boosting — all on autopilot.",
     url: "https://www.marketpiloting.com",
     siteName: "MarketPilot",
-    images: [{ url: "/favicon.png", width: 1200, height: 630, alt: "MarketPilot" }],
+    images: [{
+      url: "/og-image.png", // TODO: place a 1200×630px branded image at public/og-image.png
+      width: 1200,
+      height: 630,
+      alt: "MarketPilot — Africa's Autonomous Marketing Engine",
+    }],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "MarketPilot — Automate Your Social Media",
     description: "Africa's first autonomous marketing engine.",
-    images: ["/favicon.png"],
+    images: ["/og-image.png"], // TODO: same 1200×630px image
   },
   verification: {
     google: "3_0EMdspUfun8ekzXRRDq4_-8DUd7yNFQ_e2pxWOBwU",

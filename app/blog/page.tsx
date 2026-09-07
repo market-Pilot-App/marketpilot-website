@@ -12,11 +12,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Blog & Insights | MarketPilot",
     description: "Tips and strategies on social media automation and brand growth in Africa.",
-    url: "https://marketpiloting.online/blog",
+    url: "https://www.marketpiloting.com/blog",
     siteName: "MarketPilot",
     type: "website",
   },
-  alternates: { canonical: "https://marketpiloting.online/blog" },
+  alternates: { canonical: "https://www.marketpiloting.com/blog" },
 };
 
 const categoryColors: Record<string, string> = {

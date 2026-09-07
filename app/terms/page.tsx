@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Terms of Service — MarketPilot",
+  description: "MarketPilot's terms of service. Covers subscription billing, the 7-day money-back guarantee, refund policy, acceptable use, and the affiliate programme terms.",
+  alternates: { canonical: "/terms" },
+};
 
 export default function TermsOfService() {
   return (

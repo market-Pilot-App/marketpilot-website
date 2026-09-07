@@ -54,14 +54,18 @@ export default function Hero() {
       </div>
 
       <div className="relative max-w-5xl mx-auto text-center">
+        {/* Hidden stable H1 for SEO — crawlers read this, users see the animated version below */}
+        <h1 className="sr-only">Africa&apos;s #1 Autonomous Marketing Engine for SMEs — AI Social Media Automation</h1>
+
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#4F46E5]/20 border border-[#4F46E5]/40 rounded-full text-sm text-[#818CF8] mb-8">
           <span className="w-2 h-2 bg-[#10B981] rounded-full animate-pulse" />
           Africa's First Autonomous Marketing Engine
         </div>
 
-        {/* Animated Headline */}
-        <h1
+        {/* Animated visual headline — purely decorative, aria-hidden so screen readers use the H1 above */}
+        <div
+          aria-hidden="true"
           className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 transition-opacity duration-500"
           style={{ opacity: visible ? 1 : 0 }}
         >
@@ -78,7 +82,7 @@ export default function Hero() {
               </span>
             </>
           )}
-        </h1>
+        </div>
 
         {/* Subheadline */}
         <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto mb-10 leading-relaxed">
