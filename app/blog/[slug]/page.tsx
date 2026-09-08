@@ -4,7 +4,22 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { getAllPosts } from "../posts-data";
+import { getAllPosts, Post } from "../posts-data";
+
+const BACKEND = "https://api.marketpiloting.com";
+
+async function getPost(slug: string): Promise<Post | null> {
+  // Check static + dynamic list first
+  const posts = await getAllPosts();
+  const found = posts.find((p) => p.slug === slug);
+  if (found) return found;
+  // Fall back to direct backend fetch for brand-new posts
+  try {
+    const res = await fetch(`${BACKEND}/public/blog-posts/${slug}`, { cache: "no-store" });
+    if (res.ok) return await res.json();
+  } catch { /* ignore */ }
+  return null;
+}
 
 const postContent: Record<string, { intro: string; sections: { heading: string; body: string }[] }> = {
   "why-african-businesses-need-social-media-automation": {
@@ -128,8 +143,7 @@ export async function generateStaticParams() {
 export const dynamicParams = true;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const posts = await getAllPosts();
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = await getPost(params.slug);
   if (!post) return {};
   return {
     title: `${post.title} | MarketPilot Blog`,
@@ -148,22 +162,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function BlogPost({ params }: Props) {
-  const posts = await getAllPosts();
-  const post = posts.find((p) => p.slug === params.slug);
+  const post = await getPost(params.slug);
   if (!post) notFound();
 
-  const staticContent = postContent[post.slug];
-  const related = posts.filter((p) => p.slug !== post.slug).slice(0, 3);
+  const staticContent = postContent[post!.slug];
+  const allPosts = await getAllPosts();
+  const related = allPosts.filter((p) => p.slug !== post!.slug).slice(0, 3);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    headline: post.title,
-    description: post.excerpt,
-    datePublished: post.date,
+    headline: post!.title,
+    description: post!.excerpt,
+    datePublished: post!.date,
     author: { "@type": "Organization", name: "MarketPilot" },
     publisher: { "@type": "Organization", name: "MarketPilot", url: "https://www.marketpiloting.com" },
-    url: `https://www.marketpiloting.com/blog/${post.slug}`,
+    url: `https://www.marketpiloting.com/blog/${post!.slug}`,
   };
 
   return (
