@@ -211,7 +211,7 @@ export default async function BlogPost({ params }: Props) {
 
           {/* Cover image */}
           <div className="relative h-64 sm:h-80 w-full rounded-2xl overflow-hidden mb-10">
-            <Image src={post.image} alt={post.title} fill className="object-cover" priority />
+            <Image src={post.image} alt={post.title} fill className="object-cover" priority unoptimized={post.image.includes("pexels")} />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A]/70 to-transparent" />
           </div>
 
