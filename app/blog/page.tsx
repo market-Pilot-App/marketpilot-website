@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getAllPosts } from "./posts-data";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Blog & Insights | MarketPilot — Social Media Automation Africa",
   description: "Tips, strategies and insights on social media automation, digital marketing, and growing your brand in Africa and Nigeria.",

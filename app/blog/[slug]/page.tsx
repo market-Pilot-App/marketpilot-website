@@ -141,6 +141,7 @@ export async function generateStaticParams() {
 
 // Allow dynamic slugs not known at build time (new posts published after deploy)
 export const dynamicParams = true;
+export const dynamic = "force-dynamic";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPost(params.slug);
