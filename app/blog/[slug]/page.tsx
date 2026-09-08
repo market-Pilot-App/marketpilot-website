@@ -134,14 +134,9 @@ function MarkdownBody({ body }: { body: string }) {
 
 type Props = { params: { slug: string } };
 
-export async function generateStaticParams() {
-  const posts = await getAllPosts();
-  return posts.map((p) => ({ slug: p.slug }));
-}
-
-// Allow dynamic slugs not known at build time (new posts published after deploy)
-export const dynamicParams = true;
+// Render all blog pages dynamically — fetches from backend on every request
 export const dynamic = "force-dynamic";
+export const dynamicParams = true;
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPost(params.slug);
