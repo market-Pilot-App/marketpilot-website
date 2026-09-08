@@ -1,6 +1,3 @@
-import fs from "fs";
-import path from "path";
-
 export type Post = {
   slug: string;
   title: string;
@@ -70,17 +67,20 @@ const staticPosts: Post[] = [
   },
 ];
 
-function loadDynamicPosts(): Post[] {
+async function fetchDynamicPosts(): Promise<Post[]> {
   try {
-    const filePath = path.join(process.cwd(), "public", "blog-posts.json");
-    const raw = fs.readFileSync(filePath, "utf-8");
-    return JSON.parse(raw) as Post[];
+    const res = await fetch(
+      "https://api.marketpiloting.com/public/blog-posts",
+      { next: { revalidate: 0 } }
+    );
+    if (!res.ok) return [];
+    return await res.json();
   } catch {
     return [];
   }
 }
 
-const dynamicPosts = loadDynamicPosts();
+const dynamicPosts = await fetchDynamicPosts();
 
 // Dynamic posts first (newest), then static — deduplicate by slug
 const seen = new Set<string>();
