@@ -67,25 +67,25 @@ const staticPosts: Post[] = [
   },
 ];
 
-async function fetchDynamicPosts(): Promise<Post[]> {
+export async function getAllPosts(): Promise<Post[]> {
+  let dynamicPosts: Post[] = [];
   try {
     const res = await fetch(
       "https://api.marketpiloting.com/public/blog-posts",
-      { next: { revalidate: 0 } }
+      { cache: "no-store" }
     );
-    if (!res.ok) return [];
-    return await res.json();
+    if (res.ok) dynamicPosts = await res.json();
   } catch {
-    return [];
+    dynamicPosts = [];
   }
+
+  const seen = new Set<string>();
+  return [...dynamicPosts, ...staticPosts].filter((p) => {
+    if (seen.has(p.slug)) return false;
+    seen.add(p.slug);
+    return true;
+  });
 }
 
-const dynamicPosts = await fetchDynamicPosts();
-
-// Dynamic posts first (newest), then static — deduplicate by slug
-const seen = new Set<string>();
-export const posts: Post[] = [...dynamicPosts, ...staticPosts].filter((p) => {
-  if (seen.has(p.slug)) return false;
-  seen.add(p.slug);
-  return true;
-});
+// Synchronous fallback — static posts only (used where async isn't possible)
+export const posts: Post[] = staticPosts;

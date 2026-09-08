@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { posts } from "./posts-data";
+import { getAllPosts } from "./posts-data";
 
 export const metadata: Metadata = {
   title: "Blog & Insights | MarketPilot — Social Media Automation Africa",
@@ -27,7 +27,8 @@ const categoryColors: Record<string, string> = {
   WhatsApp: "bg-green-500/20 text-green-400",
 };
 
-export default function BlogPage() {
+export default async function BlogPage() {
+  const posts = await getAllPosts();
   return (
     <>
       <Navbar />

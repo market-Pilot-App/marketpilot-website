@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { posts } from "../posts-data";
+import { getAllPosts } from "../posts-data";
 
 const postContent: Record<string, { intro: string; sections: { heading: string; body: string }[] }> = {
   "why-african-businesses-need-social-media-automation": {
@@ -120,10 +120,12 @@ function MarkdownBody({ body }: { body: string }) {
 type Props = { params: { slug: string } };
 
 export async function generateStaticParams() {
+  const posts = await getAllPosts();
   return posts.map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const posts = await getAllPosts();
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) return {};
   return {
@@ -142,7 +144,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function BlogPost({ params }: Props) {
+export default async function BlogPost({ params }: Props) {
+  const posts = await getAllPosts();
   const post = posts.find((p) => p.slug === params.slug);
   if (!post) notFound();
 

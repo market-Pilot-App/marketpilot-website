@@ -1,7 +1,8 @@
 import { MetadataRoute } from "next";
-import { posts } from "./blog/posts-data";
+import { getAllPosts } from "./blog/posts-data";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = await getAllPosts();
   return [
     {
       url: "https://www.marketpiloting.com",
