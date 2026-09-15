@@ -80,7 +80,7 @@ export default function PrivacyPolicy() {
 
           <section>
             <h2 className="text-xl font-bold text-white mb-3">6. Third-Party Services</h2>
-            <p>We use the following third-party services to operate MarketPilot: Facebook/Meta API, Instagram API, LinkedIn API, Telegram API, Twitter/X API, Resend (email), Twilio (WhatsApp), Groq (AI), Cloudinary (media storage), Neon (database).</p>
+            <p>We use the following third-party services to operate MarketPilot: Facebook/Meta API, Instagram API, LinkedIn API, Telegram API, Twitter/X API, Resend (email), Twilio (WhatsApp), Groq (AI), Cloudinary (media storage), Scaleway PostgreSQL (database).</p>
           </section>
 
           <section>
