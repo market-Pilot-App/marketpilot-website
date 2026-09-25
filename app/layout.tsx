@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   verification: {
-    google: "3_0EMdspUfun8ekzXRRDq4_-8DUd7yNFQ_e2pxWOBwU",
+    google: ["3_0EMdspUfun8ekzXRRDq4_-8DUd7yNFQ_e2pxWOBwU", "fgRs4F3JhJDSNv6cYjQtzw119CeOmjM2DgtUz3DBDuE"],
   },
 };
 
