@@ -30,7 +30,7 @@ const plans = [
     description: "For solo entrepreneurs and micro-businesses ready for a real online presence — website included.",
     features: [
       "2 platforms (Facebook + X/Twitter)",
-      "*X/Twitter: requires optional Twitter API ($100/mo from developer.x.com) — without it, captions saved to Content Library",
+      "*X/Twitter: connect via OAuth — auto-post included",
       "📅 3 posts/day — 90 posts/month",
       "🤖 AI content generation (Brand DNA)",
       "🚀 AI-Optimized Organic Reach (likes + views)",
